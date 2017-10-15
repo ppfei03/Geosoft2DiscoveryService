@@ -6,10 +6,11 @@ const URLFORDUMYMTEST = '/home/zeus/ownCloud/Geosoft2/development/Geosoft2Discov
 
 // This array containst for each image folder on object.
 // Queries run over this array.
-const metadataCache = [];
+let metadataCache = [];
 
 function loadCache() {
   console.log('info', 'loadCache()');
+    metadataCache = [];
   return new Promise((resolve, reject) => {
     try {
 
@@ -17,7 +18,7 @@ function loadCache() {
         if(error) {
           throw error;
         }
-        xml2json(data).then(addObjectToCache).then(() => {console.log('info', 'loadCache()', 'resolve');  resolve()}).catch(error => {throw error});
+        xml2json(data).then(addObjectToCache).then(() => {console.log('info', 'loadCache()', 'resolve');  resolve(metadataCache)}).catch(error => {throw error});
       });
     } catch (error) {
       console.log('error', 'loadCache()', error)
