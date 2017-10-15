@@ -1,0 +1,26 @@
+{
+  "name": "geosoft2discoveryservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trzaska/Geosoft2DiscoveryService.git"
+  },
+  "author": "Niklas Trzaska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trzaska/Geosoft2DiscoveryService/issues"
+  },
+  "homepage": "https://github.com/Trzaska/Geosoft2DiscoveryService#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1",
+    "path": "^0.12.7"
+  }
+}
