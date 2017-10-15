@@ -17,6 +17,7 @@ const metadataCache = require('./cache/metadataCache').metadataCache;
  */
 router.get("/search", (req, res, next) => {
   console.log('info', 'Request at route /search', req.query);
+
   res.send('/search')
 });
 
