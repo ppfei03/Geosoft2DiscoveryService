@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const logger = require('winston')
+
+// For development:
+const metadataCache = require('./cache/metadataCache').metadataCache;
+
 
 
 /**
@@ -13,9 +16,15 @@ const logger = require('winston')
  * @type {JSON}
  */
 router.get("/search", (req, res, next) => {
-  logger.log('info', 'Request at route /search', req.query);
+  console.log('info', 'Request at route /search', req.query);
   res.send('/search')
 });
 
+
+// Endpoint for development, returning the whole cache
+router.get("/getCache", (req, res, next) => {
+  console.log('info', 'Request at route /getCache', req.query);
+  res.send(metadataCache)
+});
 
 module.exports = router;
