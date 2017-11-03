@@ -1,4 +1,4 @@
-'use strict'
+
 
 const fs = require('fs-extra');
 const fsReaddir = require('fs-readdir');
@@ -11,7 +11,7 @@ const dir = require('node-dir');
 // var process = require( "process" );
 
 
-let urlToDataFolder = '../urlToRootDataFolder';
+let urlToDataFolder = '../sentinel2';
 // let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen';
 
 
