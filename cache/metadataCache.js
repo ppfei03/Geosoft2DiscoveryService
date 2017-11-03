@@ -227,7 +227,7 @@ function getAvailableResolutionsWithBands(pathANDFiles) {
               console.log(availableResolutions);
               console.log('bandFilesInFolderAsArray[i]');
               console.log(bandFilesInFolderAsArray[j]);
-              // availableResolutions[pathANDFiles.filesInFolderAsArray[i]].bands.push(filesInFolderAsArray[i])
+              availableResolutions[pathANDFiles.filesInFolderAsArray[i]].bands.push(bandFilesInFolderAsArray[j])
 
             }
           }
