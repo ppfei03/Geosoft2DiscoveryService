@@ -225,8 +225,8 @@ function getAvailableResolutionsWithBands(pathANDFiles) {
             } else if (stats.isDirectory()) {
               console.log('**2**');
               console.log(availableResolutions);
-              console.log('pathANDFiles.bandFilesInFolderAsArray[i]');
-              console.log(pathANDFiles.bandFilesInFolderAsArray[j]);
+              console.log('bandFilesInFolderAsArray[i]');
+              console.log(bandFilesInFolderAsArray[j]);
               // availableResolutions[pathANDFiles.filesInFolderAsArray[i]].bands.push(filesInFolderAsArray[i])
 
             }
