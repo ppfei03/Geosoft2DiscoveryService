@@ -155,7 +155,7 @@ function addingUrlsForMSIL2A(cacheObj) {
           urls[property] = {};
           console.log('********************'); console.log(cacheObj.availableResolutionsWithBands); console.log('property'); console.log(property);
           cacheObj.availableResolutionsWithBands[property].bands.forEach(band => {
-            urls[property][band] = 'img/' + cacheObj.sceneName + '/' + 'IMG_DATA' + '/' + property + '/' + band;
+            urls[property][band] = 'http://gis-bigdata:11016' + '/' + 'img/' + cacheObj.sceneName + '/' + 'IMG_DATA' + '/' + property + '/' + band;
           })
 
         }
@@ -182,7 +182,7 @@ function addingUrlsForSIL1C(cacheObj) {
 
           console.log('********************');
           cacheObj.availableBands.forEach(band => {
-            urls[band]  =  'img/' + cacheObj.sceneName + '/' + 'IMG_DATA' + '/' + band;
+            urls[band]  =  'http://gis-bigdata:11016' + '/' + 'img/' + cacheObj.sceneName + '/' + 'IMG_DATA' + '/' + band;
           })
 
 
