@@ -1,6 +1,8 @@
+'use strict'
+
 const fs = require('fs-extra');
 const fsReaddir = require('fs-readdir');
-var through2 = require('through2');
+const through2 = require('through2');
 const path = require('path');
 
 const dir = require('node-dir');
