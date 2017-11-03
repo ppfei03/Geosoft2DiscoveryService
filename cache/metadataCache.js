@@ -215,18 +215,18 @@ function getAvailableResolutionsWithBands(pathANDFiles) {
           console.log('**1**');
           console.log(availableResolutions);
 
-          let filesInFolderAsArray = fs.readdirSync(currentFilePath);
+          let bandFilesInFolderAsArray = fs.readdirSync(currentFilePath);
 
-          for (var i in filesInFolderAsArray) {
-            var tempPath = currentFilePath + '/' + filesInFolderAsArray[i];
+          for (var j in bandFilesInFolderAsArray) {
+            var tempPath = currentFilePath + '/' + bandFilesInFolderAsArray[j];
             var stats = fs.statSync(tempPath);
             if (stats.isFile()) {
               //  console.log(currentFile);
             } else if (stats.isDirectory()) {
               console.log('**2**');
               console.log(availableResolutions);
-              console.log('pathANDFiles.filesInFolderAsArray[i]');
-              console.log(pathANDFiles.filesInFolderAsArray[i]);
+              console.log('pathANDFiles.bandFilesInFolderAsArray[i]');
+              console.log(pathANDFiles.bandFilesInFolderAsArray[j]);
               // availableResolutions[pathANDFiles.filesInFolderAsArray[i]].bands.push(filesInFolderAsArray[i])
 
             }
