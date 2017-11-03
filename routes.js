@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
+const minDateFilter = require('./filterFunctions/minDateFilter.js').minDateFilter;
+
+
 // For development:
 const metadataCache = require('./cache/metadataCache');
 
@@ -24,8 +27,20 @@ router.get("/search", (req, res, next) => {
 
 // Endpoint for development, returning the whole cache
 router.get("/datasets", (req, res, next) => {
-  console.log('info', 'Request at route /getCache', req.query);
-  res.send(metadataCache.getCache())
+
+
+    // let copyOfCache = JSON.parse(JSON.stringify(metadataCache.getCache()));
+    // let promObj = {filterResult: copyOfCache, query: req.query};
+    // minDateFilter(promObj).then(result => {
+    //   res.send(result)
+    // });
+
+    //TODO: Große Filterfunktoin schreiben, und am Ende das Ergebnis zurück geben.
+
+      console.log('info', 'Request at route /getCache', req.query);
+      res.send(metadataCache.getCache());
+
+
 });
 
 module.exports = router;
