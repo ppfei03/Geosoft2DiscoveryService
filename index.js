@@ -10,7 +10,7 @@ const metadataCache = require('./cache/metadataCache');
 
 
 
-app.set("port", process.env.PORT || 8888);
+app.set("port", process.env.PORT || 3000);
 
 
 app.use(bodyParser.urlencoded({
