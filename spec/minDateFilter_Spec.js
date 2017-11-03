@@ -1,4 +1,4 @@
-const minDateFilter = require('../filterFunctions/dateFilter.js').minDateFilter;
+const minDateFilter = require('../filterFunctions/minDateFilter.js').minDateFilter;
 
 
 describe('filterMinDate', () => {

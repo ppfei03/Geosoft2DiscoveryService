@@ -29,12 +29,9 @@ function minDateFilter(promObj) {
 
 
         filterResult = promObj.filterResult.filter(minDateFilter);
-        console.log('filterResult');
-        console.log(filterResult);
         promObj.filterResult = filterResult;
 
         resolve(promObj)
-
 
       }
       else {
