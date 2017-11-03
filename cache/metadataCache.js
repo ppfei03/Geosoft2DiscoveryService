@@ -118,13 +118,13 @@ function addBandsForScene(cacheObj) {
     try {
 
       if (isMSIL1C(cacheObj)) {
-        addImgBands(cacheObj).then(cacheObj => {
+        addImgBands(cacheObj).then(addingUrlsForSIL1C).then(cacheObj => {
           resolve(cacheObj)
         })
       }
 
       if (isMSIL2A(cacheObj)) {
-        getBandsPerResolution(cacheObj).then(addingUrlsForMSIL2).then(cacheObj => {
+        getBandsPerResolution(cacheObj).then(addingUrlsForMSIL2A).then(cacheObj => {
           resolve(cacheObj)
         })
       }
@@ -145,7 +145,7 @@ function isMSIL2A(cacheObj) {
   return sceneName.match(/.*MSIL2A.*/);
 };
 
-function addingUrlsForMSIL2(cacheObj) {
+function addingUrlsForMSIL2A(cacheObj) {
   return new Promise((resolve, reject) => {
     try {
       let urls = {};
@@ -162,7 +162,7 @@ function addingUrlsForMSIL2(cacheObj) {
       }
 
       console.log(JSON.stringify(urls));
-      cacheObj['urls'] = urls;
+      cacheObj['tmsUrls'] = urls;
 
       resolve(cacheObj)
 
@@ -171,6 +171,32 @@ function addingUrlsForMSIL2(cacheObj) {
     }
   });
 };
+
+
+
+
+function addingUrlsForSIL1C(cacheObj) {
+  return new Promise((resolve, reject) => {
+    try {
+      let urls = {};
+
+          console.log('********************');
+          cacheObj.availableBands.forEach(band => {
+            urls[band]  =  'img/' + cacheObj.sceneName + '/' + 'IMG_DATA' + '/' + band;
+          })
+
+
+      console.log(JSON.stringify(urls));
+      cacheObj['tmsUrls'] = urls;
+
+      resolve(cacheObj)
+
+    } catch (error) {
+      reject(error)
+    }
+  });
+};
+
 
 
 function addImgBands(cacheObj) {
