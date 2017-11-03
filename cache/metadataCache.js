@@ -77,7 +77,7 @@ function iterateOverEachScene(pathANDFiles) {
             // console.log(JSON.stringify(cacheObj));
             localCache.push((cacheObj));
             console.log('***************************************************');
-            // console.log(getCache());
+            console.log(getCache());
             console.log('***************************************************');
 
 
