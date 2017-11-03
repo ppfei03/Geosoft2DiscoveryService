@@ -23,7 +23,7 @@ router.get("/search", (req, res, next) => {
 
 
 // Endpoint for development, returning the whole cache
-router.get("/getCache", (req, res, next) => {
+router.get("/datasets", (req, res, next) => {
   console.log('info', 'Request at route /getCache', req.query);
   res.send(metadataCache.getCache())
 });
