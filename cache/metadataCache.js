@@ -77,7 +77,7 @@ function iterateOverEachScene(pathANDFiles) {
             // console.log(JSON.stringify(cacheObj));
             localCache.push((cacheObj));
             console.log('***************************************************');
-            // console.log(getCache());
+            console.log(getCache());
             console.log('***************************************************');
 
 
@@ -212,8 +212,7 @@ function getAvailableResolutionsWithBands(pathANDFiles) {
         if (stats.isFile()) {
         } else if (stats.isDirectory()) {
           availableResolutions[pathANDFiles.filesInFolderAsArray[i]] = {'bands': []}
-          console.log('**1**');
-          console.log(availableResolutions);
+
 
           let bandFilesInFolderAsArray = fs.readdirSync(currentFilePath);
 
@@ -223,10 +222,7 @@ function getAvailableResolutionsWithBands(pathANDFiles) {
             if (stats.isFile()) {
               //  console.log(currentFile);
             } else if (stats.isDirectory()) {
-              console.log('**2**');
-              console.log(availableResolutions);
-              console.log('bandFilesInFolderAsArray[i]');
-              console.log(bandFilesInFolderAsArray[j]);
+
               availableResolutions[pathANDFiles.filesInFolderAsArray[i]].bands.push(bandFilesInFolderAsArray[j])
 
             }
