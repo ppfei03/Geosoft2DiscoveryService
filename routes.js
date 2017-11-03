@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 // For development:
-const metadataCache = require('./cache/metadataCache').metadataCache;
+const metadataCache = require('./cache/metadataCache');
 
 
 
@@ -25,7 +25,7 @@ router.get("/search", (req, res, next) => {
 // Endpoint for development, returning the whole cache
 router.get("/getCache", (req, res, next) => {
   console.log('info', 'Request at route /getCache', req.query);
-  res.send(metadataCache)
+  res.send(metadataCache.getCache())
 });
 
 module.exports = router;

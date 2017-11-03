@@ -1,75 +1,247 @@
-const fs = require('fs');
-const parser = require('xml2js').parseString;
+const fs = require('fs-extra');
+const fsReaddir = require('fs-readdir');
+var through2 = require('through2');
+const path = require('path');
+
+const dir = require('node-dir');
+const readJsonSync = require('read-json-sync');
+
+// In newer Node.js versions where process is already global this isn't necessary.
+// var process = require( "process" );
 
 
-const URLFORDUMYMTEST = '/home/zeus/ownCloud/Geosoft2/development/Geosoft2DiscoveryService/localTestData/S2A_MSIL2A_20171007T103021_N0205_R108_T32UMC_20171007T103241.SAFE/MTD_MSIL2A.xml'
+let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen/testData';
+// let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen';
+
+
 
 // This array containst for each image folder on object.
 // Queries run over this array.
-let metadataCache = new MetadataCache();
+let localCache = [];
 
-function MetadataCache() {
-  this.cache = [];
-  this.getCache = function () {return cache};
-  this.push = function(element) {this.cache.push(element)};
-  this.empty = function() {this.cache = []};
+function getCache() {
+  return localCache;
 }
 
-function loadCache() {
-  return new Promise((resolve, reject) => {
-    metadataCache.empty();
-    try {
 
-      fs.readFile(URLFORDUMYMTEST, function(error, data) {
-        if(error) {
-          throw error;
-        }
-        xml2json(data).then(addObjectToCache).then(() => {console.log(metadataCache); console.log('info', 'loadCache()', 'resolve');  resolve(metadataCache.cache)}).catch(error => {throw error});
-      });
+
+
+function loadCache(pathToScenes) {
+  console.log('loadCache');
+  return new Promise((resolve, reject) => {
+    try {
+      getContentOfFolderAsArray('../testData').then(iterateOverEachScene);
     } catch (error) {
-      console.log('error', 'loadCache()', error)
       reject(error)
     }
   });
 };
 
 
-function addObjectToCache(object) {
-  console.log('info', 'addObjectToCache(object)');
+function getContentOfFolderAsArray(pathToFolder) {
+  console.log('getContentOfFolderAsArray');
   return new Promise((resolve, reject) => {
     try {
-      metadataCache.push(object);
-      console.log('info', 'addObjectToCache(object)', 'resolve');
-      resolve(object);
-    }
-    catch(error) {
-      console.log('error', 'addObjectToCache(object)', error);
+      let filesInFolderAsArray = fs.readdirSync(pathToFolder);
+
+      let promObj = {
+        pathToFolder: pathToFolder,
+        filesInFolderAsArray: filesInFolderAsArray
+      }
+      resolve(promObj)
+    } catch (error) {
       reject(error);
     }
   });
 };
 
-function xml2json(xml) {
-  console.log('info', 'Start xml2json(xml)');
+function iterateOverEachScene(pathANDFiles) {
   return new Promise((resolve, reject) => {
     try {
-      parser(xml, function(error, result) {
-        if (error) {
-          throw error
+
+      for (var i in pathANDFiles.filesInFolderAsArray) {
+        var currentFilePath = pathANDFiles.pathToFolder + '/' + pathANDFiles.filesInFolderAsArray[i];
+        var stats = fs.statSync(currentFilePath);
+        if (stats.isFile()) {
+          //  console.log(currentFile);
+        } else if (stats.isDirectory()) {
+
+          let cacheObj = {
+            sceneName: pathANDFiles.filesInFolderAsArray[i],
+            currentFilePath: currentFilePath
+          }
+
+          addMTDjsonTocacheObj(cacheObj).then(addBandsForScene).then(cacheObj => {
+
+            // console.log(JSON.stringify(cacheObj));
+            localCache.push((cacheObj));
+            console.log('***************************************************');
+            // console.log(getCache());
+            console.log('***************************************************');
+
+
+
+          }).catch(err => {console.log(err)});
+          //  traverseFileSystem(cacheObj);
         }
-        console.log('info', 'Start xml2json(xml)', 'resolve');
-        resolve(result);
-      });
+      }
     } catch (error) {
-      console.log('error', 'Start xml2json(xml)', error)
       reject(error)
     }
   });
 };
 
 
+
+function addMTDjsonTocacheObj(cacheObj) {
+  return new Promise((resolve, reject) => {
+    try {
+
+      // cacheObj['MTD'] =  readJsonSync(promObj.currentFile + '/' + 'MTD.json');
+      fs.readJson(cacheObj.currentFilePath + '/' + 'MTD.json')
+        .then(packageObj => {
+          // cacheObj['MTD'] = JSON.stringify(packageObj);
+          cacheObj['MTD'] = packageObj;
+          resolve(cacheObj)
+        })
+        .catch(err => {
+          throw err
+        })
+    } catch (error) {
+      reject(error)
+    }
+  });
+};
+
+function addBandsForScene(cacheObj) {
+  return new Promise((resolve, reject) => {
+    try {
+
+      if (isMSIL1C(cacheObj)) {
+        addImgBands(cacheObj).then(cacheObj => {resolve(cacheObj)})
+      }
+
+      if (isMSIL2A(cacheObj)) {
+        getBandsPerResolution(cacheObj).then(cacheObj => {resolve(cacheObj)})
+      }
+
+    } catch (error) {
+      reject(error)
+    }
+  });
+};
+
+function isMSIL1C(cacheObj) {
+  let sceneName = '' + cacheObj.sceneName
+  return sceneName.match(/.*MSIL1C.*/);
+}
+
+function isMSIL2A(cacheObj) {
+  let sceneName = '' + cacheObj.sceneName
+  return sceneName.match(/.*MSIL2A.*/);
+}
+
+
+function addImgBands(cacheObj) {
+  return new Promise((resolve, reject) => {
+
+    try {
+      getContentOfFolderAsArray(cacheObj.currentFilePath + '/' + 'IMG_DATA').then(getAvailableBandsAsArray).then(bands => {
+        cacheObj['availableBands'] = bands;
+        resolve(cacheObj)
+      })
+
+    } catch (error) {
+      reject(error);
+    }
+
+
+  });
+
+};
+
+
+function getAvailableBandsAsArray(pathANDFiles) {
+  return new Promise((resolve, reject) => {
+    try {
+
+      let availableBands = [];
+
+      for (var i in pathANDFiles.filesInFolderAsArray) {
+        var currentFilePath = pathANDFiles.pathToFolder + '/' + pathANDFiles.filesInFolderAsArray[i];
+        var stats = fs.statSync(currentFilePath);
+        if (stats.isFile()) {
+        } else if (stats.isDirectory()) {
+          availableBands.push(pathANDFiles.filesInFolderAsArray[i]);
+        }
+      }
+      resolve(availableBands);
+    } catch (error) {
+      reject(error)
+    }
+  });
+};
+
+
+function getBandsPerResolution(cacheObj) {
+  return new Promise((resolve, reject) => {
+    try {
+      getContentOfFolderAsArray(cacheObj.currentFilePath + '/' + 'IMG_DATA').then(getAvailableResolutionsWithBands).then(availableResolutionsWithBands => {
+        cacheObj['availableResolutionsWithBands'] = availableResolutionsWithBands;
+        resolve(cacheObj)
+      })
+
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
+
+
+function getAvailableResolutionsWithBands(pathANDFiles) {
+  return new Promise((resolve, reject) => {
+
+    try {
+
+      let availableResolutions = {};
+
+      for (var i in pathANDFiles.filesInFolderAsArray) {
+        var currentFilePath = pathANDFiles.pathToFolder + '/' + pathANDFiles.filesInFolderAsArray[i];
+        var stats = fs.statSync(currentFilePath);
+        if (stats.isFile()) {
+        } else if (stats.isDirectory()) {
+          availableResolutions[pathANDFiles.filesInFolderAsArray[i]] = {bands: []}
+
+
+          let filesInFolderAsArray = fs.readdirSync(currentFilePath);
+
+          for (var i in filesInFolderAsArray) {
+            var tempPath = currentFilePath + '/' + filesInFolderAsArray[i];
+            var stats = fs.statSync(tempPath);
+            if (stats.isFile()) {
+              //  console.log(currentFile);
+            } else if (stats.isDirectory()) {
+              availableResolutions[pathANDFiles.filesInFolderAsArray[i]].bands.push(filesInFolderAsArray[i])
+
+            }
+          }
+
+        }
+      }
+      resolve(availableResolutions);
+    } catch (error) {
+      reject(error)
+    }
+
+  });
+};
+
+
+
+
+
+
 module.exports = {
-  xml2json: xml2json,
   loadCache: loadCache,
-  metadataCache: metadataCache
+  getCache: getCache
 }
