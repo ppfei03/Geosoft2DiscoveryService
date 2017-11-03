@@ -10,7 +10,7 @@ const readJsonSync = require('read-json-sync');
 // var process = require( "process" );
 
 
-let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen/testData';
+let urlToDataFolder = '../urlToRootDataFolder';
 // let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen';
 
 
@@ -30,7 +30,7 @@ function loadCache(pathToScenes) {
   console.log('loadCache');
   return new Promise((resolve, reject) => {
     try {
-      getContentOfFolderAsArray('../testData').then(iterateOverEachScene);
+      getContentOfFolderAsArray(urlToDataFolder).then(iterateOverEachScene);
     } catch (error) {
       reject(error)
     }
