@@ -6,7 +6,6 @@ const through2 = require('through2');
 const path = require('path');
 
 const dir = require('node-dir');
-const readJsonSync = require('read-json-sync');
 
 // In newer Node.js versions where process is already global this isn't necessary.
 // var process = require( "process" );
@@ -99,7 +98,6 @@ function addMTDjsonTocacheObj(cacheObj) {
   return new Promise((resolve, reject) => {
     try {
 
-      // cacheObj['MTD'] =  readJsonSync(promObj.currentFile + '/' + 'MTD.json');
       fs.readJson(cacheObj.currentFilePath + '/' + 'MTD.json')
         .then(packageObj => {
           // cacheObj['MTD'] = JSON.stringify(packageObj);
