@@ -1,5 +1,3 @@
-
-
 const fs = require('fs-extra');
 const fsReaddir = require('fs-readdir');
 const through2 = require('through2');
@@ -82,7 +80,9 @@ function iterateOverEachScene(pathANDFiles) {
 
 
 
-          }).catch(err => {console.log(err)});
+          }).catch(err => {
+            console.log(err)
+          });
           //  traverseFileSystem(cacheObj);
         }
       }
@@ -118,11 +118,15 @@ function addBandsForScene(cacheObj) {
     try {
 
       if (isMSIL1C(cacheObj)) {
-        addImgBands(cacheObj).then(cacheObj => {resolve(cacheObj)})
+        addImgBands(cacheObj).then(cacheObj => {
+          resolve(cacheObj)
+        })
       }
 
       if (isMSIL2A(cacheObj)) {
-        getBandsPerResolution(cacheObj).then(cacheObj => {resolve(cacheObj)})
+        getBandsPerResolution(cacheObj).then(addingUrlsForMSIL2).then(cacheObj => {
+          resolve(cacheObj)
+        })
       }
 
     } catch (error) {
@@ -134,12 +138,39 @@ function addBandsForScene(cacheObj) {
 function isMSIL1C(cacheObj) {
   let sceneName = '' + cacheObj.sceneName
   return sceneName.match(/.*MSIL1C.*/);
-}
+};
 
 function isMSIL2A(cacheObj) {
   let sceneName = '' + cacheObj.sceneName
   return sceneName.match(/.*MSIL2A.*/);
-}
+};
+
+function addingUrlsForMSIL2(cacheObj) {
+  return new Promise((resolve, reject) => {
+    try {
+      let urls = {};
+
+      for (var property in cacheObj.availableResolutionsWithBands) {
+        if (cacheObj.availableResolutionsWithBands.hasOwnProperty(property)) {
+          urls[property] = {};
+          console.log('********************'); console.log(cacheObj.availableResolutionsWithBands); console.log('property'); console.log(property);
+          cacheObj.availableResolutionsWithBands[property].bands.forEach(band => {
+            urls[property][band] = 'img/' + cacheObj.sceneName + '/' + 'IMG_DATA' + '/' + property + '/' + band;
+          })
+
+        }
+      }
+
+      console.log(JSON.stringify(urls));
+      cacheObj['urls'] = urls;
+
+      resolve(cacheObj)
+
+    } catch (error) {
+      reject(error)
+    }
+  });
+};
 
 
 function addImgBands(cacheObj) {
@@ -170,8 +201,7 @@ function getAvailableBandsAsArray(pathANDFiles) {
       for (var i in pathANDFiles.filesInFolderAsArray) {
         var currentFilePath = pathANDFiles.pathToFolder + '/' + pathANDFiles.filesInFolderAsArray[i];
         var stats = fs.statSync(currentFilePath);
-        if (stats.isFile()) {
-        } else if (stats.isDirectory()) {
+        if (stats.isFile()) {} else if (stats.isDirectory()) {
           availableBands.push(pathANDFiles.filesInFolderAsArray[i]);
         }
       }
@@ -209,9 +239,10 @@ function getAvailableResolutionsWithBands(pathANDFiles) {
       for (var i in pathANDFiles.filesInFolderAsArray) {
         var currentFilePath = pathANDFiles.pathToFolder + '/' + pathANDFiles.filesInFolderAsArray[i];
         var stats = fs.statSync(currentFilePath);
-        if (stats.isFile()) {
-        } else if (stats.isDirectory()) {
-          availableResolutions[pathANDFiles.filesInFolderAsArray[i]] = {'bands': []}
+        if (stats.isFile()) {} else if (stats.isDirectory()) {
+          availableResolutions[pathANDFiles.filesInFolderAsArray[i]] = {
+            'bands': []
+          }
 
 
           let bandFilesInFolderAsArray = fs.readdirSync(currentFilePath);
