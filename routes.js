@@ -28,6 +28,7 @@ router.get("/search", (req, res, next) => {
 // Endpoint for development, returning the whole cache
 router.get("/datasets", (req, res, next) => {
 
+    console.log(req.query.identifiers);
 
       filter(req).then(filteredCache => {res.send(filteredCache.filterResult)}).catch(err => {res.send({status: 'errir', error: err})})
       // console.log('info', 'Request at route /getCache', req.query);

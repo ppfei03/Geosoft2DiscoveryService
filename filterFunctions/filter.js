@@ -2,6 +2,8 @@
 // promObj is passed through the filters. It is: {filterResult: copyOfCache, query: req.query}
 
 const minDateFilter = require('./minDateFilter.js').minDateFilter;
+const maxDateFilter = require('./maxDateFilter.js').maxDateFilter;
+const fileNameFilter = require('./fileNameFilter.js').fileNameFilter;
 const metadataCache = require('../cache/metadataCache');
 
 
@@ -13,7 +15,7 @@ function filter(req) {
 
       promObj.filterResult = JSON.parse( JSON.stringify(metadataCache.getCache())  );
       promObj.query = req.query;
-      minDateFilter(promObj).then(res => {resolve(res)});
+      minDateFilter(promObj).then(maxDateFilter).then(fileNameFilter).then(res => {resolve(res)});
     }
     catch(error) {
       resolve(error)

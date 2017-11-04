@@ -1,26 +1,26 @@
 // promObj is passed through the filters. It is: {filterResult: copyOfCache, query: req.query}
 
 
-function minDateFilter(promObj) {
-  console.log('minDateFilter');
+function maxDateFilter(promObj) {
+    console.log('maxDateFilter');
   return new Promise((resolve, reject) => {
     try {
       let filterResult = [];
-      if(promObj.query.minDate && dateIsValid(promObj.query.minDate)) {
+      if(promObj.query.maxDate && dateIsValid(promObj.query.maxDate)) {
 
 
-        function minDateFilter(obj) {
-          console.log("I am filtering");
+        function maxDateFilter(obj) {
+          console.log("I am filtering maxDate");
           try {
             let objDateTime = new Date(obj.MTD.metadata[""].DATATAKE_1_DATATAKE_SENSING_START);
-            let queryDate = new Date(promObj.query.minDate);
+            let queryDate = new Date(promObj.query.maxDate);
             console.log('objDateTime');
             console.log(objDateTime);
             console.log('queryDate');
             console.log(queryDate);
-            console.log('objDateTime > queryDate');
-            console.log(objDateTime > queryDate);
-            return objDateTime > queryDate;
+            console.log('queryDate < objDateTime');
+            console.log(queryDate < objDateTime);
+            return  queryDate < objDateTime;
           }
           catch(error) {
             console.log(error);
@@ -29,13 +29,14 @@ function minDateFilter(promObj) {
         }
 
 
-        filterResult = promObj.filterResult.filter(minDateFilter);
+        filterResult = promObj.filterResult.filter(maxDateFilter);
         promObj.filterResult = filterResult;
 
         resolve(promObj)
 
       }
       else {
+        console.log('No filtering of max Date');
         resolve(promObj) // No filter or no valid one: No Filter applied
       }
     }
@@ -47,12 +48,7 @@ function minDateFilter(promObj) {
 
 
 function dateIsValid(date) {
-  console.log("dateIsValid");
-  console.log("Given Date: ");
-  console.log(date);
   let dateResult = new Date(date);
-  console.log("given Date as new Date()");
-  console.log(dateResult);
   if(dateResult == 'Invalid Date') {
     return false
   }
@@ -63,5 +59,5 @@ function dateIsValid(date) {
 
 
 module.exports = {
-  minDateFilter: minDateFilter
+  maxDateFilter: maxDateFilter
 }
