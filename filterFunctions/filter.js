@@ -4,6 +4,7 @@
 const minDateFilter = require('./minDateFilter.js').minDateFilter;
 const maxDateFilter = require('./maxDateFilter.js').maxDateFilter;
 const fileNameFilter = require('./fileNameFilter.js').fileNameFilter;
+const polygoneIntersectionFilter = require('./polygonIntersectionFilter.js').polygoneIntersectionFilter;
 const metadataCache = require('../cache/metadataCache');
 
 
@@ -15,7 +16,7 @@ function filter(req) {
 
       promObj.filterResult = JSON.parse( JSON.stringify(metadataCache.getCache())  );
       promObj.query = req.query;
-      minDateFilter(promObj).then(maxDateFilter).then(fileNameFilter).then(res => {resolve(res)});
+      minDateFilter(promObj).then(maxDateFilter).then(fileNameFilter).then(polygoneIntersectionFilter).then(res => {resolve(res)});
     }
     catch(error) {
       resolve(error)

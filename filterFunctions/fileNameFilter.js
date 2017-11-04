@@ -14,6 +14,7 @@ function fileNameFilter(promObj) {
           if(i == promObj.filterResult.length) {
             promObj.filterResult = filterResult;
             resolve(promObj);
+            break;
           }
           else {
             let sceneName = promObj.filterResult[i].sceneName;
