@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const minDateFilter = require('./filterFunctions/minDateFilter.js').minDateFilter;
+const filter = require('./filterFunctions/filter.js').filter;
 
 
 // For development:
@@ -29,16 +29,9 @@ router.get("/search", (req, res, next) => {
 router.get("/datasets", (req, res, next) => {
 
 
-    // let copyOfCache = JSON.parse(JSON.stringify(metadataCache.getCache()));
-    // let promObj = {filterResult: copyOfCache, query: req.query};
-    // minDateFilter(promObj).then(result => {
-    //   res.send(result)
-    // });
-
-    //TODO: Große Filterfunktoin schreiben, und am Ende das Ergebnis zurück geben.
-
-      console.log('info', 'Request at route /getCache', req.query);
-      res.send(metadataCache.getCache());
+      filter(req).then(filteredCache => {res.send(filteredCache.filterResult)}).catch(err => {res.send({status: 'errir', error: err})})
+      // console.log('info', 'Request at route /getCache', req.query);
+      // res.send(metadataCache.getCache());
 
 
 });
