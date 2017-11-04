@@ -30,11 +30,15 @@ router.get("/datasets", (req, res, next) => {
 
     console.log(req.query.identifiers);
 
-      filter(req).then(filteredCache => {res.send(filteredCache.filterResult)}).catch(err => {res.send({status: 'errir', error: err})})
+      filter(req).then(filteredCache => {res.send(filteredCache.filterResult)}).catch(err => {res.send({status: 'error', error: err})})
       // console.log('info', 'Request at route /getCache', req.query);
       // res.send(metadataCache.getCache());
 
+});
 
+//Endpoint for MSIL1C
+router.get("/pixelValue/:sceneIdentifier/:band", (req, res, next) => {
+  
 });
 
 module.exports = router;
