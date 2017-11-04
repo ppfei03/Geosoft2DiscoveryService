@@ -23,6 +23,7 @@
     "fs-extra": "^4.0.2",
     "fs-readdir": "0.0.3",
     "jasmine": "^2.8.0",
+    "node-cmd": "^3.0.0",
     "node-dir": "^0.1.17",
     "nodemon": "^1.12.1",
     "path": "^0.12.7",
