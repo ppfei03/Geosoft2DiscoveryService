@@ -15,12 +15,22 @@ describe('testSceneName', () => {
 
   });
 
+    it('returns true, if seachstring is in string', done => {
+        const sceneName = "S2A_MSIL1C_20161212T0823…GD_20161212T084403.SAFE";
+        const search = ["1212T", "C_2"];
+        let result = testSceneName(sceneName, search)
+
+        expect(result).toEqual(true);
+        done();
+
+    });
+
   it('returns true, if seachstring is in string', done => {
     const sceneName = "S2A_MSIL1C_20161212T0823…GD_20161212T084403.SAFE";
     const search = ["0000", "1212T"];
     let result = testSceneName(sceneName, search)
 
-      expect(result).toEqual(true);
+      expect(result).toEqual(false);
       done();
   });
 
@@ -43,12 +53,12 @@ describe('fileNameFilter', () => {
     let reqObj = {
       filterResult: testArray,
       query : {
-        identifiers: 'XXX,S2A_MSIL2A_20170825T102021_N0205_R065_T32TLS_20170825T102114'
+        identifiers: 'S2A_MSIL2A_ 20170825T102114'
       }
     };
 
     fileNameFilter(reqObj).then(result => {
-      expect(result.filterResult.length).toEqual(1); done();
+      expect(result.filterResult.length).toEqual(2); done();
     });
   });
 
