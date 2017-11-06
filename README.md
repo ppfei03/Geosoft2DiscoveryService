@@ -248,6 +248,8 @@ If the query-parameter _identifiers_ is provided, its value is splitted at its w
 Each splitted element is handled as a filter criteria.
 The name of a scene has to contain every filter criteria to pass this filter.
 
+The filter is implemented in _filterFunctions/fileNameFilter.js_.
+
 #### Date filter (minimum and maximum)
 The given date in minDateTime/maxDateTime will be compared with _DATATAKE_1_DATATAKE_SENSING_START_
 from the metadata.
@@ -255,7 +257,14 @@ The comparison is strict (>,<).
 The given value in the query parameters are passed to _new Date(...)_.
 If the result is valid, it will be processed. Otherwise the query element will be ignored.
 
+The filter is implemented in _filterFunctions/minDateFilter.js_/_filterFunctions/maxDateFilter.js_.
+
 
 #### Polygone intersection filter
-The given _bbox_ in the query is used to filter by spatial extend. 
+The given _bbox_ in the query is used to filter by spatial extend.
+A scene passes the filter if at least one coordinate of the given bbox lies inside 
+the footprint or if at least one coordinate of the polygone lies inside the bbox.
+By this, the following cases of intersection are covered:
 ![polygone intersection](./Polygone_Bbox_intersection.png)
+
+

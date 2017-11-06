@@ -29,7 +29,7 @@ const metadataCache = require('./cache/metadataCache');
 /**
  * Endpoint for searching
  * Processed query parameters are:
- * ?searchString: Commaseperated String of elements that will be used for matching (matching what?)
+ * ?identifiers: Whitespace seperated String of elements that will be used for matching (matching what?)
  * ?bbox: Spatial extent as bbox in WGS84: minx, miny, maxx, maxy
  * ?minDateTime: how old the younges image is allowd to be (inclusive)
  * ?maxDateTime: how old the oldes image is allowed to be (inclusive)
