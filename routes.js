@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const filter = require('./filterFunctions/filter.js').filter;
+const getPixelValueForMSIL1CP = require('./pixelValue/MSIL1CPixelValue.js').getPixelValueForMSIL1CP;
 
 
 // For development:
@@ -37,8 +38,9 @@ router.get("/datasets", (req, res, next) => {
 });
 
 //Endpoint for MSIL1C
-router.get("/pixelValue/:sceneIdentifier/:band", (req, res, next) => {
-  
+//expect query parameters identifier and band
+router.get("/pixelValue", (req, res, next) => {
+  getPixelValueForMSIL1CP(req.query).then(resp => res.send(resp))
 });
 
 module.exports = router;
