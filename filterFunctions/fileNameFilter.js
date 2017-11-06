@@ -77,6 +77,6 @@ function allSeachElementInSceneName(sceneName, searchElements) {
 // }
 
 module.exports = {
-  testSceneName: oneSeachElementInSceneName,
+  testSceneName: allSeachElementInSceneName,
   fileNameFilter: fileNameFilter
 }
