@@ -43,7 +43,7 @@ function polygoneIntersectionFilter(promObj) {
           } else {
             let sentinelFootprintPolygone = getSexySentinelPOLYGON(promObj.filterResult[i].MTD.metadata[""].FOOTPRINT)
 
-            if (queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone)) {
+            if (queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone) || queryPolygoneIntersectOrIsContained(sentinelFootprintPolygone, queryPolygone)) {
               tempFilterResult.push(promObj.filterResult[i]);
             }
           }
