@@ -52,7 +52,7 @@ router.get("/img", (req, res, next) => {
     logger.info(req.query);
     let promObj = {req: req};
 
-    getTile(promObj).then(promObj => {res.sendFile(promObj.path)}).catch(error => {res.send({status: 'error', error: error})});
+    getTile(promObj).then(promObj => {logger.info('gotPath'); logger.info(promObj.path); res.sendFile(promObj.path)}).catch(error => {res.send({status: 'error', error: error})});
 
 });
 
