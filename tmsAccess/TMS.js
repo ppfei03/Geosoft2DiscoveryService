@@ -1,5 +1,7 @@
 const logger = require('logops');
-const fs = require('fs-extra')
+const fs = require('fs-extra');
+const path = require("path");
+
 
 function getTile(promObj) {
     return new Promise((resolve, reject) => {
@@ -81,7 +83,7 @@ function getMSIL1CPath(promObj) {
 
 function checkPath(promObj) {
     return new Promise((resolve, reject) => {
-        fs.pathExists(promObj.path)
+        fs.pathExists(path.join(__dirname, '/../' + promObj.path))
             .then(exists => {
                 logger.info('********* Resolving Path **********************')
                 logger.info(promObj.path);
