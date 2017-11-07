@@ -3,6 +3,7 @@ const router = express.Router();
 const logger = require('logops');
 const filter = require('./filterFunctions/filter.js').filter;
 const pixelValue = require('./pixelValue/pixelValue.js').pixelValue;
+const getTile = require('./tmsAccess/TMS.js').getTile;
 
 // For development:
 const metadataCache = require('./cache/metadataCache');
@@ -42,6 +43,16 @@ router.get("/datasets", (req, res, next) => {
       filter(req).then(filteredCache => {res.send(filteredCache.filterResult)}).catch(err => {res.send({status: 'error', error: err})})
       // console.log('info', 'Request at route /getCache', req.query);
       // res.send(metadataCache.getCache());
+
+});
+
+// /img?identifier=&resolution=&band=&z=&x&y
+router.get("/img", (req, res, next) => {
+
+    logger.info(req.query);
+    let promObj = {req: req};
+
+    getTile(promObj).then(promObj => {res.sendFile(promObj.path)}).catch(error => {res.send({status: 'error', error: error})});
 
 });
 
