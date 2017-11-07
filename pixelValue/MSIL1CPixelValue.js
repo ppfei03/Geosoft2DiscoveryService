@@ -2,6 +2,7 @@ const cmd = require('node-cmd');
 const dir = require('node-dir');
 const parser = require('xml2json');
 const logger = require('logops');
+const fs = require('fs-extra')
 
 
 
@@ -60,6 +61,9 @@ function getFolderUrl(promObj) {
 
       // let urlToRequestedImage = path.join(__dirname, '/../sentinel2' + '/' + scene + '/' + 'IMG_DATA' + '/');
         let urlToRequestedImage = '../sentinel2' + '/' + scene + '/' + 'IMG_DATA' + '/'
+        if(promObj.req.query.resolution){
+            urlToRequestedImage += promObj.req.query.resolution + '/'
+        }
 
       promObj['url'] = urlToRequestedImage;
       resolve(promObj);
@@ -74,12 +78,19 @@ function getAllFilesInFolder(promObj) {
     logger.info('getAllFilesInFolder');
   return new Promise((resolve, reject) => {
     try {
-      dir.promiseFiles(promObj.url)
-      .then((files)=>{
-          promObj["files"] = files;
-          resolve(promObj);
-      })
-      .catch(e=>console.error(e))
+
+
+        fs.pathExists(promObj.url)
+            .then(exists => {
+
+                dir.promiseFiles(promObj.url)
+                    .then((files)=>{
+                        promObj["files"] = files;
+                        resolve(promObj);
+                    })
+                    .catch(e=> {reject(e)});
+
+            }).catch(e => {reject(e)});
 
     } catch (error) {
       reject(error);
@@ -161,21 +172,6 @@ function getGdallocationinfoAsJson(promObj) {
     }
   });
 };
-
-//
-// function parseXMLToJSON(promObj) {
-//     logger.info('parseXMLToJSON')
-//   return new Promise((resolve, reject) => {
-//     try {
-//         const locationInfoAsJSON = parser.toJson(promObj.locationinfoAsXML);
-//         promObj['locationInfoAsJSON'] = locationInfoAsJSON;
-//         resolve(promObj);
-//     }
-//     catch(error) {
-//       reject(error);
-//     }
-//   });
-// };
 
 
 module.exports = {
