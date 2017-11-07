@@ -1,37 +1,65 @@
 const cmd = require('node-cmd');
 const dir = require('node-dir');
 const parser = require('xml2json');
+const logger = require('logops');
 
-cmd.get(
-  'pwd',
-  function(err, data, stderr) {
-    console.log('the current working dir is : ', data)
-  }
-);
+
+
 
 
 function getPixelValueForMSIL1CP(promObj) {
   return new Promise((resolve, reject) => {
     try {
-      getFolderUrl(promObj).then(getAllFilesInFolder)
+        checkRequest(promObj).then(getFolderUrl)
+                            .then(getAllFilesInFolder)
                             .then(getNameOfMathchingFile)
                             .then(addFilenameToPath)
-                            .then(getGdallocationinfoAsXML)
-                            .then(parseXMLToJSON)
-                            .then(promObj => {resolve(promObj)})
-                            .catch(error => {throw error});
+                            .then(getGdallocationinfoAsJson)
+                            .then(re => {resolve(re)})
+                            .catch(error => {reject(error)});
     } catch (error) {
       reject(error);
     }
   });
 };
 
+function checkRequest(promObj) {
+    logger.info('checkRequest');
+  return new Promise((resolve, reject) => {
+    try {
+      if(!promObj.req.query) {
+        throw "No query given";
+      }
+      else if(!promObj.req.query.identifier) {
+        throw 'No identifier in query';
+      }
+      else if(!promObj.req.query.band) {
+          throw 'No band in query';
+      }
+      else if(!promObj.req.query.lat) {
+        throw 'No lat given';
+      }
+      else if(!promObj.req.query.long) {
+        throw 'No long given';
+      }
+      else {
+        resolve(promObj);
+      }
+  }
+  catch(error) {
+      reject(error)
+  }
+  });
+};
+
 function getFolderUrl(promObj) {
+    logger.info('getFolderUrl');
   return new Promise((resolve, reject) => {
     try {
       const scene = promObj.req.query.identifier;
 
-      let urlToRequestedImage = '/../../sentinel2' + '/' + scene + '/' + 'IMG_DATA' + '/';
+      // let urlToRequestedImage = path.join(__dirname, '/../sentinel2' + '/' + scene + '/' + 'IMG_DATA' + '/');
+        let urlToRequestedImage = '../sentinel2' + '/' + scene + '/' + 'IMG_DATA' + '/'
 
       promObj['url'] = urlToRequestedImage;
       resolve(promObj);
@@ -43,6 +71,7 @@ function getFolderUrl(promObj) {
 
 
 function getAllFilesInFolder(promObj) {
+    logger.info('getAllFilesInFolder');
   return new Promise((resolve, reject) => {
     try {
       dir.promiseFiles(promObj.url)
@@ -59,6 +88,7 @@ function getAllFilesInFolder(promObj) {
 };
 
 function getNameOfMathchingFile(promObj) {
+    logger.info('getNameOfMathchingFile')
   return new Promise((resolve, reject) => {
     try {
       const band = promObj.req.query.band;
@@ -83,9 +113,10 @@ function getNameOfMathchingFile(promObj) {
 
 
 function addFilenameToPath(promObj) {
+    logger.info('addFilenameToPath')
   return new Promise((resolve, reject) => {
       try {
-          promObj.url = promObj.url + promObj.filename;
+          promObj.url = promObj.filename;
           resolve(promObj);
       }
       catch(error) {
@@ -94,21 +125,29 @@ function addFilenameToPath(promObj) {
   });
 };
 
-function getGdallocationinfoAsXML(promObj) {
+function getGdallocationinfoAsJson(promObj) {
+    logger.info('getGdallocationinfoAsXML')
   return new Promise((resolve, reject) => {
     try {
 
-// EXAMPLE
-// gdallocationinfo -wgs84 -xml T30PTB_20171010T104021_TCI.jp2 -5.5 15.0
+        const command = 'gdallocationinfo -wgs84 -xml ' + promObj.url + ' ' + promObj.req.query.long + ' ' + promObj.req.query.lat;
+        // 'gdallocationinfo -wgs84 -xml T30PTB_20171010T104021_TCI.jp2 -5 15',
         cmd.get(
-            'gdallocationinfo -wgs84 -xml ' + promObj.url + ' ' + prom.req.query.long + ' ' + prom.req.query.lat,
+            command,
             function(error, data, stderr) {
-                console.log('the current working dir is : ', data)
+
                 if(error) {
-                  throw error;
+                    logger.error(error)
+                  reject(error);
                 }
                 else if(data) {
-                  promObj['locationinfoAsXML'] = data;
+                    let i = data;
+                    // console.log(typeof i)
+                    // console.log(i)
+                    let j =  parser.toJson(data);
+                    // console.log(j);
+                    promObj['locationinfo']
+                  resolve(j);
                 }
                 else {
                   throw 'No error and no data as response of gdallocationinfo';
@@ -123,19 +162,20 @@ function getGdallocationinfoAsXML(promObj) {
   });
 };
 
-
-function parseXMLToJSON(promObj) {
-  return new Promise((resolve, reject) => {
-    try {
-        const locationInfoAsJSON = parser.toJson(promObj.locationinfoAsXML);
-        promObj['locationInfoAsJSON'] = locationInfoAsJSON;
-        resolve(promObj);
-    }
-    catch(error) {
-      reject(error);
-    }
-  });
-};
+//
+// function parseXMLToJSON(promObj) {
+//     logger.info('parseXMLToJSON')
+//   return new Promise((resolve, reject) => {
+//     try {
+//         const locationInfoAsJSON = parser.toJson(promObj.locationinfoAsXML);
+//         promObj['locationInfoAsJSON'] = locationInfoAsJSON;
+//         resolve(promObj);
+//     }
+//     catch(error) {
+//       reject(error);
+//     }
+//   });
+// };
 
 
 module.exports = {

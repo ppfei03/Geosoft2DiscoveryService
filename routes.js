@@ -4,7 +4,6 @@ const router = express.Router();
 const filter = require('./filterFunctions/filter.js').filter;
 const getPixelValueForMSIL1CP = require('./pixelValue/MSIL1CPixelValue.js').getPixelValueForMSIL1CP;
 
-
 // For development:
 const metadataCache = require('./cache/metadataCache');
 
@@ -49,7 +48,8 @@ router.get("/datasets", (req, res, next) => {
 //Endpoint for MSIL1C
 //expect query parameters identifier and band
 router.get("/pixelValue", (req, res, next) => {
-  getPixelValueForMSIL1CP(req.query).then(resp => res.send(resp))
+    const reqObj = {req: req};
+  getPixelValueForMSIL1CP(reqObj).then(resp => {res.send(resp)}).catch(error => {res.send({status: 'error', error: error})});
 });
 
 module.exports = router;

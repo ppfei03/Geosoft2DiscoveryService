@@ -2,6 +2,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const expressLogging = require('express-logging');
+const logger = require('logops');
 
 const routes = require("./routes");
 const app = express();
@@ -12,7 +14,7 @@ const metadataCache = require('./cache/metadataCache');
 
 app.set("port", process.env.PORT || 3000);
 
-
+app.use(expressLogging(logger));
 app.use(bodyParser.urlencoded({
   extended: false
 }));
