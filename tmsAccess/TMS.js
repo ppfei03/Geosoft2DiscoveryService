@@ -83,6 +83,7 @@ function checkPath(promObj) {
     return new Promise((resolve, reject) => {
         fs.pathExists(promObj.path)
             .then(exists => {
+                logger.info('********* Resolving Path **********************')
                 resolve(promObj);
             }).catch(e => {reject(e)});
     });
