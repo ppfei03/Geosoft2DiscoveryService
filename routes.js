@@ -48,15 +48,15 @@ router.get("/datasets", (req, res, next) => {
 
 });
 
-// /img?identifier=&resolution=&band=&z=&x&y
-router.get("/img", (req, res, next) => {
-
-    logger.info(req.query);
-    let promObj = {req: req};
-
-    getTile(promObj).then(promObj => {logger.info('gotPath'); logger.info(promObj.path); logger.info(path.join(__dirname, promObj.path)); res.sendFile(path.join(__dirname, promObj.path))}).catch(error => {res.send({status: 'error', error: error})});
-
-});
+// // /img?identifier=&resolution=&band=&z=&x&y
+// router.get("/img", (req, res, next) => {
+//
+//     logger.info(req.query);
+//     let promObj = {req: req};
+//
+//     getTile(promObj).then(promObj => {logger.info('gotPath'); logger.info(promObj.path); logger.info(path.join(__dirname, promObj.path)); res.sendFile(path.join(__dirname, promObj.path))}).catch(error => {res.send({status: 'error', error: error})});
+//
+// });
 
 //Endpoint for MSIL1C
 //expect query parameters identifier and band
