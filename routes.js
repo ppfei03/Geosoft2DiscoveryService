@@ -59,7 +59,7 @@ router.get("/datasets", (req, res, next) => {
 // });
 
 //Endpoint for MSIL1C
-//expect query parameters identifier and band
+//expect query parameters identifier and band, lat, long
 router.get("/pixelValue", (req, res, next) => {
     const reqObj = {req: req};
     pixelValue(reqObj).then(resp => {res.send(resp)}).catch(error => {res.send({status: 'error', error: error})});

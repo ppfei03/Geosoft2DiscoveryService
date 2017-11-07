@@ -11,7 +11,7 @@ The following functionalities are provided:
     - bbox filter
     - min date filter
     - max date filter
- -pixel value access
+ - pixel value access
  
 This document is intended to document the API and to describe some background
 to the realisation.
@@ -184,9 +184,9 @@ echo --- End building TMS with 2A Data ---
 
 ```
 
-## TMS API
+### TMS API
 These files are made accessible by using a static resource access to the folders.
-### MSIL1C
+#### MSIL1C
 **Get:** /img/datasetidentifier/IMG_DATA/band/Z/X/Y.png
 
  * datasetidentifier: MMM_MSIL1C_YYYYMMDDHHMMSS_Nxxyy_ROOOTxxxxx<Product Discriminator>.SAFE
@@ -197,7 +197,7 @@ Z/X/Y according TMS
 256x256 tile in .png format
 
 
-### MSIL2A
+#### MSIL2A
 **Get:** /img/datasetidentifier/IMG_DATA/resolution/band/Z/X/Y.png
 
  * datasetidentifier: MMM_MSIL2A_YYYYMMDDHHMMSS_Nxxyy_ROOOTxxxxx<Product Discriminator>.SAFE
@@ -268,3 +268,196 @@ By this, the following cases of intersection are covered:
 ![polygone intersection](./Polygone_Bbox_intersection.png)
 
 
+#### Examples 
+##### Simple valid request with filename filter
+[http://gis-bigdata:11016/datasets?identifiers=20171010T104021](http://gis-bigdata:11016/datasets?identifiers=20171010T104021)
+
+###### Response
+
+```json
+[
+    {
+        "sceneName": "S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE",
+        "currentFilePath": "../sentinel2/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE",
+        "MTD": {
+            "description": "MTD_MSIL1C.xml",
+            "driverShortName": "SENTINEL2",
+            "driverLongName": "Sentinel 2",
+            "files": [
+                "MTD_MSIL1C.xml"
+            ],
+            "size": [
+                512,
+                512
+            ],
+            "coordinateSystem": {
+                "wkt": ""
+            },
+            "metadata": {
+                "": {
+                    "CLOUD_COVERAGE_ASSESSMENT": "4.9866",
+                    "DATATAKE_1_DATATAKE_SENSING_START": "2017-10-10T10:40:21.026Z",
+                    "DATATAKE_1_DATATAKE_TYPE": "INS-NOBS",
+                    "DATATAKE_1_ID": "GS2A_20171010T104021_012017_N02.05",
+                    "DATATAKE_1_SENSING_ORBIT_DIRECTION": "DESCENDING",
+                    "DATATAKE_1_SENSING_ORBIT_NUMBER": "8",
+                    "DATATAKE_1_SPACECRAFT_NAME": "Sentinel-2A",
+                    "DEGRADED_ANC_DATA_PERCENTAGE": "0",
+                    "DEGRADED_MSI_DATA_PERCENTAGE": "0",
+                    "FOOTPRINT": "POLYGON((-5.792574778325615 15.21306525473414, -5.77238811748588 15.30284082872241, -5.759542476122597 15.35996672719849, -4.772206157911985 15.37008837747189, -4.764121373097517 14.377826199225611, -5.781720811443401 14.368052294534657, -5.792574778325615 15.21306525473414))",
+                    "FORMAT_CORRECTNESS_FLAG": "PASSED",
+                    "GENERAL_QUALITY_FLAG": "PASSED",
+                    "GENERATION_TIME": "2017-10-10T10:49:47.000000Z",
+                    "GEOMETRIC_QUALITY_FLAG": "PASSED",
+                    "PREVIEW_GEO_INFO": "Not applicable",
+                    "PREVIEW_IMAGE_URL": "Not applicable",
+                    "PROCESSING_BASELINE": "02.05",
+                    "PROCESSING_LEVEL": "Level-1C",
+                    "PRODUCT_START_TIME": "2017-10-10T10:40:21.026Z",
+                    "PRODUCT_STOP_TIME": "2017-10-10T10:40:21.026Z",
+                    "PRODUCT_TYPE": "S2MSI1C",
+                    "PRODUCT_URI": "S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE",
+                    "QUANTIFICATION_VALUE": "10000",
+                    "RADIOMETRIC_QUALITY_FLAG": "PASSED",
+                    "REFERENCE_BAND": "B1",
+                    "REFLECTANCE_CONVERSION_U": "1.00159547411106",
+                    "SENSOR_QUALITY_FLAG": "PASSED",
+                    "SPECIAL_VALUE_NODATA": "0",
+                    "SPECIAL_VALUE_SATURATED": "65535"
+                },
+                "SUBDATASETS": {
+                    "SUBDATASET_1_NAME": "SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630",
+                    "SUBDATASET_1_DESC": "Bands B2, B3, B4, B8 with 10m resolution, UTM 30N",
+                    "SUBDATASET_2_NAME": "SENTINEL2_L1C:MTD_MSIL1C.xml:20m:EPSG_32630",
+                    "SUBDATASET_2_DESC": "Bands B5, B6, B7, B8A, B11, B12 with 20m resolution, UTM 30N",
+                    "SUBDATASET_3_NAME": "SENTINEL2_L1C:MTD_MSIL1C.xml:60m:EPSG_32630",
+                    "SUBDATASET_3_DESC": "Bands B1, B9, B10 with 60m resolution, UTM 30N",
+                    "SUBDATASET_4_NAME": "SENTINEL2_L1C:MTD_MSIL1C.xml:TCI:EPSG_32630",
+                    "SUBDATASET_4_DESC": "True color image, UTM 30N"
+                }
+            },
+            "cornerCoordinates": {
+                "upperLeft": [
+                    0,
+                    0
+                ],
+                "lowerLeft": [
+                    0,
+                    512
+                ],
+                "lowerRight": [
+                    512,
+                    512
+                ],
+                "upperRight": [
+                    512,
+                    0
+                ],
+                "center": [
+                    256,
+                    256
+                ]
+            },
+            "wgs84Extent": {
+                "type": "Polygon",
+                "coordinates": [
+                    []
+                ]
+            },
+            "bands": []
+        },
+        "availableBands": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B08",
+            "B09",
+            "B10",
+            "B11",
+            "B12",
+            "B8A",
+            "TCI"
+        ],
+        "tmsUrls": {
+            "B01": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01",
+            "B02": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B02",
+            "B03": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B03",
+            "B04": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B04",
+            "B05": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B05",
+            "B06": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B06",
+            "B07": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B07",
+            "B08": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B08",
+            "B09": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B09",
+            "B10": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B10",
+            "B11": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B11",
+            "B12": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B12",
+            "B8A": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B8A",
+            "TCI": "http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/TCI"
+        }
+    }
+]
+```
+
+## Pixel value
+As the provided tiles to not carry the original measurement values, 
+_Discovery_ provides access to the original measurement data.
+
+### API
+GET: /pixelValue
+
+**Accepted query parameters:**
+ * identifier: scene name 
+ * band
+ * lat
+ * long
+
+**Response:**
+Object, containing the pixel values
+
+#### Examples 
+##### Valud Request
+[http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=15&long=-5](http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=15&long=-5)
+
+###### Response
+
+```json
+{  
+   "Report":{  
+      "pixel":"8496",
+      "line":"4074",
+      "BandReport":[  
+         {  
+            "band":"1",
+            "Value":"161"
+         },
+         {  
+            "band":"2",
+            "Value":"129"
+         },
+         {  
+            "band":"3",
+            "Value":"115"
+         }
+      ]
+   }
+}
+```
+
+##### Invalud Request
+[http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=-5&long=-5](http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=-5&long=-5)
+
+###### Response
+
+```json
+{  
+   "Report":{  
+      "pixel":"7826",
+      "line":"225304",
+      "Alert":"Location is off this file! No further details to report."
+   }
+}
+```
