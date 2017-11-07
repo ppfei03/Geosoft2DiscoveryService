@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-
+const logger = require('logops');
 const filter = require('./filterFunctions/filter.js').filter;
-const getPixelValueForMSIL1CP = require('./pixelValue/MSIL1CPixelValue.js').getPixelValueForMSIL1CP;
+const pixelValue = require('./pixelValue/pixelValue.js').pixelValue;
 
 // For development:
 const metadataCache = require('./cache/metadataCache');
@@ -37,7 +37,7 @@ const metadataCache = require('./cache/metadataCache');
 // Endpoint for development, returning the whole cache
 router.get("/datasets", (req, res, next) => {
 
-    console.log(req.query.identifiers);
+    logger.info(req.query);
 
       filter(req).then(filteredCache => {res.send(filteredCache.filterResult)}).catch(err => {res.send({status: 'error', error: err})})
       // console.log('info', 'Request at route /getCache', req.query);
@@ -49,7 +49,7 @@ router.get("/datasets", (req, res, next) => {
 //expect query parameters identifier and band
 router.get("/pixelValue", (req, res, next) => {
     const reqObj = {req: req};
-  getPixelValueForMSIL1CP(reqObj).then(resp => {res.send(resp)}).catch(error => {res.send({status: 'error', error: error})});
+    pixelValue(reqObj).then(resp => {res.send(resp)}).catch(error => {res.send({status: 'error', error: error})});
 });
 
 module.exports = router;

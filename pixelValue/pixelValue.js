@@ -8,7 +8,7 @@ const fs = require('fs-extra')
 
 
 
-function getPixelValueForMSIL1CP(promObj) {
+function pixelValue(promObj) {
   return new Promise((resolve, reject) => {
     try {
         checkRequest(promObj).then(getFolderUrl)
@@ -113,7 +113,7 @@ function getNameOfMathchingFile(promObj) {
       }
 
       // If no matching element is found, the following code is excecuted:
-        throw 'No matching file for given scene and band found.'
+        reject('No matching file for given scene and band found.');
 
     }
     catch(error) {
@@ -175,5 +175,5 @@ function getGdallocationinfoAsJson(promObj) {
 
 
 module.exports = {
-    getPixelValueForMSIL1CP: getPixelValueForMSIL1CP
+    pixelValue: pixelValue
 }
