@@ -50,11 +50,8 @@ function getTilePath(promObj) {
         if(promObj.req.query.resolution){
             resolve(getMSIL2APath(promObj));
         }
-        else if {
-            resolve(getMSIL1CPath(promObj));
-        }
         else {
-            reject('Error in getTilePath')
+            resolve(getMSIL1CPath(promObj));
         }
     }
     catch(error) {
