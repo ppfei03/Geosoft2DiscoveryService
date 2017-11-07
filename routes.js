@@ -4,6 +4,8 @@ const logger = require('logops');
 const filter = require('./filterFunctions/filter.js').filter;
 const pixelValue = require('./pixelValue/pixelValue.js').pixelValue;
 const getTile = require('./tmsAccess/TMS.js').getTile;
+const path = require("path");
+
 
 // For development:
 const metadataCache = require('./cache/metadataCache');
@@ -52,7 +54,7 @@ router.get("/img", (req, res, next) => {
     logger.info(req.query);
     let promObj = {req: req};
 
-    getTile(promObj).then(promObj => {logger.info('gotPath'); logger.info(promObj.path); res.sendFile(promObj.path)}).catch(error => {res.send({status: 'error', error: error})});
+    getTile(promObj).then(promObj => {logger.info('gotPath'); logger.info(promObj.path);logger.info(path.join(__dirname, promObj.path)); res.sendFile(path.join(__dirname, promObj.path)).catch(error => {res.send({status: 'error', error: error})});
 
 });
 

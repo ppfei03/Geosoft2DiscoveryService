@@ -66,14 +66,14 @@ function getTilePath(promObj) {
 
 function getMSIL2APath(promObj) {
     let query = promObj.req.query;
-    let path = '../../sentinel2/' + query.identifier + '/IMG_DATA' + '/' + query.resolution + '/' + query.band  + '/' + query.z + '/' + query.x + '/' + query.y + '.png'
+    let path = '/../sentinel2/' + query.identifier + '/IMG_DATA' + '/' + query.resolution + '/' + query.band  + '/' + query.z + '/' + query.x + '/' + query.y + '.png'
     promObj['path'] = path;
     return promObj;
 };
 
 function getMSIL1CPath(promObj) {
     let query = promObj.req.query;
-    let path = '../../sentinel2/' + query.identifier + '/IMG_DATA' + '/' + query.band  + '/' + query.z + '/' + query.x + '/' + query.y + '.png'
+    let path = '/../sentinel2/' + query.identifier + '/IMG_DATA' + '/' + query.band  + '/' + query.z + '/' + query.x + '/' + query.y + '.png'
     promObj['path'] = path;
     return promObj;
 };
