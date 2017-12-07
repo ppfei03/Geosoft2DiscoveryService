@@ -16,6 +16,7 @@ const metadataCache = require('./cache/metadataCache');
 
 app.set("port", process.env.PORT || 3000);
 
+app.use(cors);
 app.use(expressLogging(logger));
 app.use(compression());
 app.use(bodyParser.urlencoded({
