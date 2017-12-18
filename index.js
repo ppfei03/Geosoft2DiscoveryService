@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use('/img', express.static(path.join(__dirname, '/../sentinel2')));
+app.use('/img', express.static(path.join(__dirname, '/../sentinel2_0_8500Backup')));
 
 app.use(routes);
 
