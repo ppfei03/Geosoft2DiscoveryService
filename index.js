@@ -5,6 +5,8 @@ const path = require("path");
 const expressLogging = require('express-logging');
 const logger = require('logops');
 const compression = require('compression')
+const cors = require('cors');
+
 
 
 const routes = require("./routes");
