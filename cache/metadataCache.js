@@ -9,7 +9,7 @@ const dir = require('node-dir');
 // var process = require( "process" );
 
 
-let urlToDataFolder = '../sentinel2';
+let urlToDataFolder = '/../sentinel2_0_8500Backup';
 // let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen';
 
 
