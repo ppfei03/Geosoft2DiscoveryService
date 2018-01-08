@@ -1,4 +1,3 @@
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
@@ -26,7 +25,7 @@ app.use(routes);
 
 
 
-metadataCache.loadCache().then(
+metadataCache.loadCache().then( // loading the cache. Start the server only if the cache is loaded
   app.listen(app.get("port"), function() {
     console.log("Server started on port " + app.get("port"));
   })
