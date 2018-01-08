@@ -6,7 +6,7 @@ const expressLogging = require('express-logging');
 const logger = require('logops');
 const compression = require('compression')
 const cors = require('cors');
-// const routes = require("./routes");
+const routes = require("./routes");
 const metadataCache = require('./cache/metadataCache');
 const config = require('./config/config').config;
 
@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 
 // Serving the tiles
 app.use('/img', express.static(path.join(__dirname, config.urlToDataFolder)));
-// app.use(routes);
+app.use(routes);
 
 
 
