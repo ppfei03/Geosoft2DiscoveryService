@@ -1,4 +1,4 @@
-
+// This file contains the logic to filter the metadata cache array based on file name properties
 
 /**
  * This filter works on the name of the scene.
@@ -59,22 +59,6 @@ function allSeachElementInSceneName(sceneName, searchElements) {
     return (numberOfMatches == searchElements.length);
 }
 
-
-// /**
-//  * OR Filter
-//  * @param sceneName
-//  * @param searchElements
-//  * @returns {boolean}
-//  */
-// function oneSeachElementInSceneName(sceneName, searchElements) {
-//     for(let i = 0; i < searchElements.length; i++) {
-//         let reg = new RegExp('.*' + searchElements[i] + '.*');
-//         if(reg.test(sceneName)){
-//             return true;
-//         }
-//     }
-//     return false;
-// }
 
 module.exports = {
   testSceneName: allSeachElementInSceneName,
