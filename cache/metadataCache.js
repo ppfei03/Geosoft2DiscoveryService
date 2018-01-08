@@ -1,9 +1,8 @@
 const fs = require('fs-extra');
+const config = require('../config/config').config;
 
 
-
-let urlToDataFolder = '../sentinel2_0_8500Backup';
-// let urlToRootDataFolder = '/home/zeus/ownCloud/Geosoft2/developmen';
+let urlToDataFolder = config.urlToDataFolder;
 
 
 

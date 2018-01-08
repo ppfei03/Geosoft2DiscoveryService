@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a988332d-65df-44e9-a4b4-051a93fd015c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/config.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cache/metadataCache.js" afterPath="$PROJECT_DIR$/cache/metadataCache.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,14 +21,31 @@
       <file leaf-file-name="metadataCache.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cache/metadataCache.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -39,6 +58,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/cache/metadataCache.js" />
       </list>
     </option>
@@ -88,6 +108,11 @@
               <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -129,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515434459296</updated>
-      <workItem from="1515434460744" duration="193000" />
+      <workItem from="1515434460744" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193000" />
+    <option name="totallyTimeSpent" value="550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="19" width="1682" height="1062" extended-state="6" />
@@ -171,10 +196,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cache/metadataCache.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
           <folding />
         </state>
       </provider>
