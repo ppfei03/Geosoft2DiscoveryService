@@ -1,12 +1,5 @@
 const fs = require('fs-extra');
-const fsReaddir = require('fs-readdir');
-const through2 = require('through2');
-const path = require('path');
 
-const dir = require('node-dir');
-
-// In newer Node.js versions where process is already global this isn't necessary.
-// var process = require( "process" );
 
 
 let urlToDataFolder = '../sentinel2_0_8500Backup';
