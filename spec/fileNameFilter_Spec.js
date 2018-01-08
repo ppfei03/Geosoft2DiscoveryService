@@ -1,4 +1,6 @@
+// This file contains test for testing the file for filenames. Run npm test for tests
 // promObj is passed through the filters. It is: {filterResult: copyOfCache, query: req.query}
+
 
 const testSceneName = require('../filterFunctions/fileNameFilter.js').testSceneName;
 const fileNameFilter = require('../filterFunctions/fileNameFilter.js').fileNameFilter;

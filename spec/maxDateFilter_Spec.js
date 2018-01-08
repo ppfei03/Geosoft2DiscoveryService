@@ -1,3 +1,5 @@
+// This file contains test for testing the file for max. date. Run npm test for tests
+
 const maxDateFilter = require('../filterFunctions/maxDateFilter.js').maxDateFilter;
 
 

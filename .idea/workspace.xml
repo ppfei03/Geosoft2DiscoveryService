@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a988332d-65df-44e9-a4b4-051a93fd015c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/config.js" afterPath="$PROJECT_DIR$/config/config.js" />
-      <change beforePath="$PROJECT_DIR$/filterFunctions/fileNameFilter.js" afterPath="$PROJECT_DIR$/filterFunctions/fileNameFilter.js" />
+      <change beforePath="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" afterPath="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" />
+      <change beforePath="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" afterPath="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" />
+      <change beforePath="$PROJECT_DIR$/spec/minDateFilter_Spec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/spec/polygonintersection_Spec.js" afterPath="$PROJECT_DIR$/spec/polygonintersection_Spec.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,21 +20,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.js">
+      <file leaf-file-name="fileNameFilter_Spec.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fileNameFilter.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/filterFunctions/fileNameFilter.js">
+      <file leaf-file-name="maxDateFilter_Spec.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/maxDateFilter_Spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polygonintersection_Spec.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/polygonintersection_Spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,9 +62,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fsReaddir</find>
-      <find>logger</find>
       <find>routes</find>
       <find>metadataCache</find>
+      <find>inside</find>
+      <find>cmd</find>
+      <find>parser</find>
+      <find>logger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -65,6 +80,14 @@
         <option value="$PROJECT_DIR$/filterFunctions/fileNameFilter.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/cache/metadataCache.js" />
+        <option value="$PROJECT_DIR$/filterFunctions/filter.js" />
+        <option value="$PROJECT_DIR$/filterFunctions/maxDateFilter.js" />
+        <option value="$PROJECT_DIR$/filterFunctions/minDateFilter.js" />
+        <option value="$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js" />
+        <option value="$PROJECT_DIR$/pixelValue/pixelValue.js" />
+        <option value="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" />
+        <option value="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" />
+        <option value="$PROJECT_DIR$/spec/polygonintersection_Spec.js" />
       </list>
     </option>
   </component>
@@ -121,7 +144,12 @@
             <path>
               <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
-              <item name="filterFunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,18 +192,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515434459296</updated>
-      <workItem from="1515434460744" duration="7685000" />
+      <workItem from="1515434460744" duration="10715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7685000" />
+    <option name="totallyTimeSpent" value="10715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1680" height="1054" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1858781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1858781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -214,14 +241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelValue/pixelValue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -230,28 +249,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
+    <entry file="file://$PROJECT_DIR$/filterFunctions/fileNameFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="1080">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cache/metadataCache.js">
+    <entry file="file://$PROJECT_DIR$/filterFunctions/minDateFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="213" column="52" lean-forward="false" selection-start-line="213" selection-start-column="52" selection-end-line="213" selection-end-column="52" />
+        <state relative-caret-position="72">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filterFunctions/fileNameFilter.js">
+    <entry file="file://$PROJECT_DIR$/filterFunctions/maxDateFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="810">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="49" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2483">
+          <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filterFunctions/filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/metadataCache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-954">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelValue/pixelValue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="173" column="56" lean-forward="false" selection-start-line="173" selection-start-column="56" selection-end-line="173" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/maxDateFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/polygonintersection_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/minDateFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
