@@ -1,8 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const expressLogging = require('express-logging');
-const logger = require('logops');
 const compression = require('compression')
 const cors = require('cors');
 const routes = require("./routes");
@@ -12,7 +10,6 @@ const config = require('./config/config').config;
 const app = express();
 app.set("port", process.env.PORT || 3000);
 app.use(cors());
-app.use(expressLogging(logger));
 app.use(compression());
 app.use(bodyParser.urlencoded({
   extended: false
