@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a988332d-65df-44e9-a4b4-051a93fd015c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" afterPath="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" />
-      <change beforePath="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" afterPath="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" />
-      <change beforePath="$PROJECT_DIR$/spec/minDateFilter_Spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spec/polygonintersection_Spec.js" afterPath="$PROJECT_DIR$/spec/polygonintersection_Spec.js" />
+      <change beforePath="$PROJECT_DIR$/test/test.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,31 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fileNameFilter_Spec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maxDateFilter_Spec.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/maxDateFilter_Spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polygonintersection_Spec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/polygonintersection_Spec.js">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,7 +45,12 @@
       <find>cmd</find>
       <find>parser</find>
       <find>logger</find>
+      <find>TMS</find>
+      <find>getTile</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/tmsAccess</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,6 +70,7 @@
         <option value="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" />
         <option value="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" />
         <option value="$PROJECT_DIR$/spec/polygonintersection_Spec.js" />
+        <option value="$PROJECT_DIR$/routes.js" />
       </list>
     </option>
   </component>
@@ -146,11 +129,6 @@
               <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -192,12 +170,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515434459296</updated>
-      <workItem from="1515434460744" duration="10715000" />
+      <workItem from="1515434460744" duration="11126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10715000" />
+    <option name="totallyTimeSpent" value="11126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1680" height="1054" extended-state="6" />
@@ -237,14 +215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -321,18 +291,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/maxDateFilter_Spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/minDateFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -345,7 +323,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/minDateFilter_Spec.js">
+    <entry file="file://$PROJECT_DIR$/tmsAccess/TMS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
