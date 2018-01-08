@@ -2,7 +2,6 @@
 const cmd = require('node-cmd');
 const dir = require('node-dir');
 const parser = require('xml2json');
-const logger = require('logops');
 const fs = require('fs-extra')
 const config = require('../config/config').config;
 
@@ -39,7 +38,6 @@ function pixelValue(promObj) {
  * @returns {Promise<any>}
  */
 function checkRequest(promObj) {
-    logger.info('checkRequest');
     return new Promise((resolve, reject) => {
         try {
             if (!promObj.req.query) {
@@ -73,7 +71,6 @@ function checkRequest(promObj) {
  * @returns {Promise<any>}
  */
 function getFolderUrl(promObj) {
-    logger.info('getFolderUrl');
     return new Promise((resolve, reject) => {
         try {
             const scene = promObj.req.query.identifier;
@@ -99,7 +96,6 @@ function getFolderUrl(promObj) {
  * @returns {Promise<any>}
  */
 function getAllFilesInFolder(promObj) {
-    logger.info('getAllFilesInFolder');
     return new Promise((resolve, reject) => {
         try {
             fs.pathExists(promObj.url)
@@ -130,7 +126,6 @@ function getAllFilesInFolder(promObj) {
  * @returns {Promise<any>}
  */
 function getNameOfMathchingFile(promObj) {
-    logger.info('getNameOfMathchingFile')
     return new Promise((resolve, reject) => {
         try {
             const band = promObj.req.query.band;
@@ -158,7 +153,6 @@ function getNameOfMathchingFile(promObj) {
  * @returns {Promise<any>}
  */
 function addFilenameToPath(promObj) {
-    logger.info('addFilenameToPath')
     return new Promise((resolve, reject) => {
         try {
             promObj.url = promObj.filename;
@@ -176,7 +170,6 @@ function addFilenameToPath(promObj) {
  * @returns {Promise<any>}
  */
 function getGdallocationinfoAsJson(promObj) {
-    logger.info('getGdallocationinfoAsXML')
     return new Promise((resolve, reject) => {
         try {
 
@@ -187,7 +180,6 @@ function getGdallocationinfoAsJson(promObj) {
                 function (error, data, stderr) {
 
                     if (error) {
-                        logger.error(error)
                         reject(error);
                     }
                     else if (data) {
