@@ -3,8 +3,7 @@ const router = express.Router();
 const logger = require('logops');
 const filter = require('./filterFunctions/filter.js').filter;
 const pixelValue = require('./pixelValue/pixelValue.js').pixelValue;
-const getTile = require('./tmsAccess/TMS.js').getTile;
-const path = require("path");
+
 
 
 // For development:
