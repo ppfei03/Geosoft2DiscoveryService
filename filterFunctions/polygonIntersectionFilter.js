@@ -1,3 +1,4 @@
+// This file contains the logic to filter scenes which do not intersect with given points
 var inside = require('point-in-polygon');
 
 
@@ -27,142 +28,178 @@ var inside = require('point-in-polygon');
 //
 // https://sentinel.esa.int/documents/247904/349490/S2_MSI_Product_Specification.pdf
 
+/**
+ * Removes all elements from array in promObj, which do not intersect with given points
+ * @param promObj
+ * @returns {Promise<any>}
+ */
 function polygoneIntersectionFilter(promObj) {
-  console.log('polygoneIntersectionFilter');
-  return new Promise((resolve, reject) => {
-    try {
-      let tempFilterResult = [];
-      if (promObj.query.bbox && bboxConsistsOfNumbers(promObj.query.bbox) && (numberOfElements(promObj.query.bbox) === 4)) {
-        const queryPolygone = getSexyQueryBbox(promObj.query.bbox);
+    console.log('polygoneIntersectionFilter');
+    return new Promise((resolve, reject) => {
+        try {
+            let tempFilterResult = [];
+            if (promObj.query.bbox && bboxConsistsOfNumbers(promObj.query.bbox) && (numberOfElements(promObj.query.bbox) === 4)) {
+                const queryPolygone = getSexyQueryBbox(promObj.query.bbox);
 
-        for (let i = 0; i <= promObj.filterResult.length; i++) {
-          if (i === promObj.filterResult.length) {
-            promObj.filterResult = tempFilterResult;
-            resolve(promObj);
-            break;
-          } else {
-            let sentinelFootprintPolygone = getSexySentinelPOLYGON(promObj.filterResult[i].MTD.metadata[""].FOOTPRINT)
+                for (let i = 0; i <= promObj.filterResult.length; i++) {
+                    if (i === promObj.filterResult.length) {
+                        promObj.filterResult = tempFilterResult;
+                        resolve(promObj);
+                        break;
+                    } else {
+                        let sentinelFootprintPolygone = getSexySentinelPOLYGON(promObj.filterResult[i].MTD.metadata[""].FOOTPRINT)
 
-            if (queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone) || queryPolygoneIntersectOrIsContained(sentinelFootprintPolygone, queryPolygone)) {
-              tempFilterResult.push(promObj.filterResult[i]);
+                        if (queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone) || queryPolygoneIntersectOrIsContained(sentinelFootprintPolygone, queryPolygone)) {
+                            tempFilterResult.push(promObj.filterResult[i]);
+                        }
+                    }
+                }
+            } else {
+                console.log('No filtering of bbox');
+                resolve(promObj) // No filter or no valid one: No Filter applied
             }
-          }
+        } catch (error) {
+            reject(error);
         }
-      } else {
-        console.log('No filtering of bbox');
-        resolve(promObj) // No filter or no valid one: No Filter applied
-      }
-    } catch (error) {
-      reject(error);
-    }
-  });
-};
-
-function queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone) {
-  for(let i = 0; i < queryPolygone.length; i++) {
-    if(inside(queryPolygone[i], sentinelFootprintPolygone)) {
-      return true;
-    }
-  }
-  return false;
-};
-
-function getSexyQueryBbox(bboxString) {
-  console.log('************');
-  console.log('getSexyQueryBbox');
-  console.log('***************');
-  bboxString = bboxString.replace(' ', '');
-  let bboxArray = bboxString.split(',');
-  if (bboxArray.length != 4) {
-    throw {
-      state: 'error',
-      message: 'I need 4 coordinates: minx,miny,maxx,maxy'
-    }
-  }
-  let polygoneArray = [
-    [
-      bboxArray[0], // minx
-      bboxArray[1] // miny
-    ],
-    [
-      bboxArray[2], //maxx
-      bboxArray[1] //miny
-    ],
-    [
-      bboxArray[2], //maxx
-      bboxArray[3] //maxy
-    ],
-    [
-      bboxArray[0], //minx
-      bboxArray[3] //maxy
-    ]
-  ];
-
-  return polygoneArray;
-};
-
-
-function getSexySentinelPOLYGON(FootprintString) {
-  console.log('************');
-  console.log('getSexySentinelPOLYGON');
-  console.log('***************');
-  let polygoneArray = [];
-  FootprintString = FootprintString.replace('POLYGON((', '');
-
-  FootprintString = FootprintString.replace('))', '');
-
-  let xyPairs = FootprintString.split(',');
-
-
-  for (let i = 0; i < xyPairs.length; i++) {
-    let crazySplitWithEmptyArray = xyPairs[i].split(" ");
-    let coordinate = [];
-    crazySplitWithEmptyArray.forEach(element => {
-      if (isNumeric(element)) {
-        coordinate.push(element)
-      }
     });
-    xyPairs[i] = coordinate;
-  };
-
-  xyPairs.forEach(coordinate => {
-    let coordObj = [];
-    coordObj.push(coordinate[0]);
-    coordObj.push(coordinate[1]);
-    polygoneArray.push(coordObj);
-  });
-  return polygoneArray;
 };
 
-
-function bboxConsistsOfNumbers(bboxString) {
-  let bboxArray = bboxString.split(',');
-  console.log('bboxArray.length'); console.log(bboxArray.length);
-  for (let i = 0; i < bboxArray.length; i++) {
-    if (isNumeric(bboxArray[i])) {} else {
-      return false;
+/**
+ * Checks if a point is inside of a polygone
+ * @param queryPolygone
+ * @param sentinelFootprintPolygone
+ * @returns {boolean}
+ */
+function queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone) {
+    for (let i = 0; i < queryPolygone.length; i++) {
+        if (inside(queryPolygone[i], sentinelFootprintPolygone)) {
+            return true;
+        }
     }
-  }
+    return false;
+};
 
-  return true;
+/**
+ * Transforms a string, which represents a boundingbox in a more processable format
+ * @param bboxString
+ * @returns {*[]}
+ */
+function getSexyQueryBbox(bboxString) {
+    console.log('************');
+    console.log('getSexyQueryBbox');
+    console.log('***************');
+    bboxString = bboxString.replace(' ', '');
+    let bboxArray = bboxString.split(',');
+    if (bboxArray.length != 4) {
+        throw {
+            state: 'error',
+            message: 'I need 4 coordinates: minx,miny,maxx,maxy'
+        }
+    }
+    let polygoneArray = [
+        [
+            bboxArray[0], // minx
+            bboxArray[1] // miny
+        ],
+        [
+            bboxArray[2], //maxx
+            bboxArray[1] //miny
+        ],
+        [
+            bboxArray[2], //maxx
+            bboxArray[3] //maxy
+        ],
+        [
+            bboxArray[0], //minx
+            bboxArray[3] //maxy
+        ]
+    ];
+
+    return polygoneArray;
+};
+
+/**
+ * Transforms a string, which represents a boundingbox in a more processable format
+ * @param bboxString
+ * @returns {*[]}
+ */
+function getSexySentinelPOLYGON(FootprintString) {
+    console.log('************');
+    console.log('getSexySentinelPOLYGON');
+    console.log('***************');
+    let polygoneArray = [];
+
+    FootprintString = FootprintString.replace('POLYGON((', '');
+    FootprintString = FootprintString.replace('))', '');
+
+    let xyPairs = FootprintString.split(',');
+
+    for (let i = 0; i < xyPairs.length; i++) {
+        let crazySplitWithEmptyArray = xyPairs[i].split(" ");
+        let coordinate = [];
+        crazySplitWithEmptyArray.forEach(element => {
+            if (isNumeric(element)) {
+                coordinate.push(element)
+            }
+        });
+        xyPairs[i] = coordinate;
+    }
+    ;
+
+    xyPairs.forEach(coordinate => {
+        let coordObj = [];
+        coordObj.push(coordinate[0]);
+        coordObj.push(coordinate[1]);
+        polygoneArray.push(coordObj);
+    });
+    return polygoneArray;
+};
+
+/**
+ * Checks if the the given boundinbox consists of numbers
+ * @param bboxString
+ * @returns {boolean}
+ */
+function bboxConsistsOfNumbers(bboxString) {
+    let bboxArray = bboxString.split(',');
+    console.log('bboxArray.length');
+    console.log(bboxArray.length);
+    for (let i = 0; i < bboxArray.length; i++) {
+        if (isNumeric(bboxArray[i])) {
+        } else {
+            return false;
+        }
+    }
+    return true;
 }
 
-// From: https://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
+
+/**
+ * Checks whether something is a number.
+ * From: https://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
+ * @param n
+ * @returns {boolean}
+ */
 function isNumeric(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
+    return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
+
+/**
+ * Returns the number of elements in a comma separated sting
+ * @param bboxString
+ * @returns {number}
+ */
 function numberOfElements(bboxString) {
-  let stringClean = bboxString.replace(' ', '');
-  stringClean = stringClean.split(',');
-  console.log('stringClean.length'); console.log(stringClean.length);
-  return stringClean.length;
+    let stringClean = bboxString.replace(' ', '');
+    stringClean = stringClean.split(',');
+    return stringClean.length;
 }
 
 
 module.exports = {
-  getSexySentinelPOLYGON: getSexySentinelPOLYGON,
-  getSexyQueryBbox: getSexyQueryBbox,
-  polygoneIntersectionFilter: polygoneIntersectionFilter,
-  queryPolygoneIntersectOrIsContained: queryPolygoneIntersectOrIsContained
+    getSexySentinelPOLYGON: getSexySentinelPOLYGON,
+    getSexyQueryBbox: getSexyQueryBbox,
+    polygoneIntersectionFilter: polygoneIntersectionFilter,
+    queryPolygoneIntersectOrIsContained: queryPolygoneIntersectOrIsContained
 }
