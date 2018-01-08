@@ -1,21 +1,8 @@
+// This file contains test for testing the file for min. date. Run npm test for tests
+
 // promObj is passed through the filters. It is: {filterResult: copyOfCache, query: req.query}
 
 const queryPolygoneIntersectOrIsContained = require('../filterFunctions/polygonIntersectionFilter.js').queryPolygoneIntersectOrIsContained;
-const polygoneIntersectionFilter = require('../filterFunctions/polygonIntersectionFilter.js').polygoneIntersectionFilter;
-
-
-// describe('polygoneIntersectionFilter', () => {
-//   it('returns polygones which intersect with a given bbox', done => {
-//       let testObj = {
-//         filterResult: testArray, query: {bbox: '7.508721662869659, 45.95294906157136, 7.468260721947195, 46.07045453324583'}
-//       }
-//
-//         polygoneIntersectionFilter(testObj).then(res => {
-//         expect(res.filterResult.length).toEqual(4);
-//         done();
-//       });
-//   });
-// });
 
 
 

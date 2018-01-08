@@ -7,7 +7,12 @@ const fileNameFilter = require('./fileNameFilter.js').fileNameFilter;
 const polygoneIntersectionFilter = require('./polygonIntersectionFilter.js').polygoneIntersectionFilter;
 const metadataCache = require('../cache/metadataCache');
 
-
+/**
+ * Wrapping the filters of this service.
+ * A copy of the cache runs through the filters. If a filtercondition does not match, the element is removed from the array
+ * @param req Contains the filter conditions
+ * @returns {Promise<any>}
+ */
 function filter(req) {
   return new Promise((resolve, reject) => {
     try {
