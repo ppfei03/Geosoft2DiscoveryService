@@ -173,7 +173,10 @@ function getGdallocationinfoAsJson(promObj) {
     return new Promise((resolve, reject) => {
         try {
 
-            const command = 'gdallocationinfo -wgs84 -xml ' + promObj.url + ' ' + promObj.req.query.long + ' ' + promObj.req.query.lat;
+
+            resolve({"John": 42})
+
+   /*         const command = 'gdallocationinfo -wgs84 -xml ' + promObj.url + ' ' + promObj.req.query.long + ' ' + promObj.req.query.lat;
             // 'gdallocationinfo -wgs84 -xml T30PTB_20171010T104021_TCI.jp2 -5 15',
             cmd.get(
                 command,
@@ -195,7 +198,7 @@ function getGdallocationinfoAsJson(promObj) {
                         throw 'No error and no data as response of gdallocationinfo';
                     }
                 }
-            );
+            );*/
 
         }
         catch (error) {
