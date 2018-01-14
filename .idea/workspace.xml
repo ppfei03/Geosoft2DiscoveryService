@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a988332d-65df-44e9-a4b4-051a93fd015c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/MSIL1CExampleTile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/MSIL2AExampleTile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TMSSchema" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TMSSchema.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js" afterPath="$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,8 +79,8 @@
       <file leaf-file-name="polygonIntersectionFilter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="35" />
+            <state relative-caret-position="506">
+              <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -148,7 +143,6 @@
         <option value="$PROJECT_DIR$/filterFunctions/filter.js" />
         <option value="$PROJECT_DIR$/filterFunctions/maxDateFilter.js" />
         <option value="$PROJECT_DIR$/filterFunctions/minDateFilter.js" />
-        <option value="$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js" />
         <option value="$PROJECT_DIR$/spec/fileNameFilter_Spec.js" />
         <option value="$PROJECT_DIR$/spec/maxDateFilter_Spec.js" />
         <option value="$PROJECT_DIR$/spec/polygonintersection_Spec.js" />
@@ -156,6 +150,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/pixelValue/pixelValue.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js" />
       </list>
     </option>
   </component>
@@ -277,12 +272,12 @@
       <updated>1515434459296</updated>
       <workItem from="1515434460744" duration="13623000" />
       <workItem from="1515456525526" duration="8055000" />
-      <workItem from="1515924508734" duration="4342000" />
+      <workItem from="1515924508734" duration="4516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26020000" />
+    <option name="totallyTimeSpent" value="26194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -543,8 +538,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="506">
+          <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
           <folding />
         </state>
       </provider>
