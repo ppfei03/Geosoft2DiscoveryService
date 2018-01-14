@@ -80,7 +80,7 @@ function queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPol
     console.log(sentinelFootprintPolygone)
     for (let i = 0; i < queryPolygone.length; i++) {
         console.log("Check point " +queryPolygone[i])
-        if (inside([queryPolygone[i]], sentinelFootprintPolygone)) {
+        if (inside(queryPolygone[i], sentinelFootprintPolygone)) {
             return true;
         }
     }
@@ -106,22 +106,22 @@ function getSexyQueryBbox(bboxString) {
         }
     }
     let polygoneArray = [
-        [
+        [[
             bboxArray[0], // minx
             bboxArray[1] // miny
-        ],
-        [
+        ]],
+        [[
             bboxArray[2], //maxx
             bboxArray[1] //miny
-        ],
-        [
+        ]],
+        [[
             bboxArray[2], //maxx
             bboxArray[3] //maxy
-        ],
-        [
+        ]],
+        [[
             bboxArray[0], //minx
             bboxArray[3] //maxy
-        ]
+        ]]
     ];
 
     console.log("sexyPolygonBbox"); console.log(polygoneArray)
