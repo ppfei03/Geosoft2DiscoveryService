@@ -1,5 +1,7 @@
 ## Discovery
 
+Die .io-Seite kann unter ![https://amun-software.github.io/Geosoft2DiscoveryService/](https://amun-software.github.io/Geosoft2DiscoveryService/) eingesehen werden.
+
 _Discovery_ ist eine Backend-Komponente in _SPHINX_.
 
 Die folgenden Funktionalitäten werden von DISCOVERY zur Verfügung gestellt:
