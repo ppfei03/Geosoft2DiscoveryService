@@ -80,7 +80,7 @@ function queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPol
     console.log(sentinelFootprintPolygone)
     for (let i = 0; i < queryPolygone.length; i++) {
         console.log("Check point " +queryPolygone[i])
-        if (inside(queryPolygone[i], sentinelFootprintPolygone)) {
+        if (inside([[queryPolygone[i]]], sentinelFootprintPolygone)) {
             return true;
         }
     }
