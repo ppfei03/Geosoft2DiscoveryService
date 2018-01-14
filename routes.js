@@ -15,7 +15,7 @@ const pixelValue = require('./pixelValue/pixelValue.js').pixelValue;
  */
 router.get("/datasets", (req, res, next) => {
     filter(req).then(filteredCache => {
-        res.send(filteredCache.filterResult)
+        res.send(filteredCache.filterResult).catch(err => {res.send(err)});
     }).catch(err => {
         res.send({status: 'error', error: err})
     })

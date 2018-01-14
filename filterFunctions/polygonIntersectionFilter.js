@@ -40,8 +40,6 @@ function polygoneIntersectionFilter(promObj) {
     return new Promise((resolve, reject) => {
         try {
             let tempFilterResult = [];
-            console.log("promObj.query.bbox"); console.log(promObj.query.bbox);
-            console.log("numberOfElements(promObj.query.bbox)"); console.log(numberOfElements(promObj.query.bbox))
             if (promObj.query.bbox && bboxConsistsOfNumbers(promObj.query.bbox) && (numberOfElements(promObj.query.bbox) === 4)) {
                 const queryPolygone = getSexyQueryBbox(promObj.query.bbox);
 

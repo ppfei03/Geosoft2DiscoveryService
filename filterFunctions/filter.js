@@ -21,7 +21,7 @@ function filter(req) {
 
       promObj.filterResult = JSON.parse( JSON.stringify(metadataCache.getCache())  );
       promObj.query = req.query;
-      minDateFilter(promObj).then(maxDateFilter).then(fileNameFilter).then(polygoneIntersectionFilter).then(res => {resolve(res)});
+      minDateFilter(promObj).then(maxDateFilter).then(fileNameFilter).then(polygoneIntersectionFilter).then(res => {resolve(res)}).catch(error => {reject(error)});
     }
     catch(error) {
       resolve(error)
