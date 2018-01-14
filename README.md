@@ -23,7 +23,7 @@ Zum Starten des Servers wahlweise *npm start* oder *node index.js* ausführen.
 
 ## Lizenzierung
 
-| Package          | Lizenz               |
+| benutzte Packete | Lizenz               |
 | --- | --- |
 | body-parser      | MIT                  |
 | compression      | MIT                  |
