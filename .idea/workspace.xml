@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a988332d-65df-44e9-a4b4-051a93fd015c" name="Default" comment="" />
+    <list default="true" id="a988332d-65df-44e9-a4b4-051a93fd015c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/MSIL1CExampleTile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/MSIL2AExampleTile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TMSSchema" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TMSSchema.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,32 +20,82 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes.js">
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="120">
+                <caret line="68" column="65" lean-forward="true" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
+                <folding>
+                  <marker date="1515927912404" expanded="true" signature="3099:9439" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="3105:9437" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="3321:7276" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="3477:3525" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="3547:3603" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="3637:3678" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="3704:6553" ph="{...}" />
+                  <marker date="1515927912404" expanded="true" signature="3726:5776" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="5809:6539" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="6588:7088" ph="{...}" />
+                  <marker date="1515927912404" expanded="true" signature="6619:6683" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="6714:6780" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="6812:6880" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="6912:6978" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="7006:7074" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="7117:7241" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="7185:7227" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="7304:7580" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="7601:9431" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="11579:17919" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="11585:17917" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="11801:15756" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="11957:12005" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="12027:12083" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="12117:12158" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="12184:15033" ph="{...}" />
+                  <marker date="1515927912404" expanded="true" signature="12206:14256" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="14289:15019" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="15068:15568" ph="{...}" />
+                  <marker date="1515927912404" expanded="true" signature="15099:15163" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="15194:15260" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="15292:15360" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="15392:15458" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="15486:15554" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="15597:15721" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="15665:15707" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="15784:16060" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="16081:17911" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="18569:18893" ph="{...}" />
+                  <marker date="1515927912404" expanded="true" signature="18585:18891" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="18651:18886" ph="[...]" />
+                  <marker date="1515927912404" expanded="true" signature="18664:18728" ph="{&quot;band&quot;: &quot;1&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="18739:18803" ph="{&quot;band&quot;: &quot;2&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="18814:18878" ph="{&quot;band&quot;: &quot;3&quot;...}" />
+                  <marker date="1515927912404" expanded="true" signature="19224:19368" ph="{...}" />
+                  <marker date="1515927912404" expanded="true" signature="19240:19366" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polygonIntersectionFilter.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="326">
+              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pixelValue.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pixelValue/pixelValue.js">
+      <file leaf-file-name="polygonintersection_Spec.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/polygonintersection_Spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="176" column="58" lean-forward="false" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="52" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,6 +128,8 @@
       <find>logops</find>
       <find>polygoneIntersectionFilter</find>
       <find>asXML</find>
+      <find>img</find>
+      <find>Polygone</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/tmsAccess</dir>
@@ -96,6 +155,7 @@
         <option value="$PROJECT_DIR$/routes.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/pixelValue/pixelValue.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -137,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,14 +219,22 @@
             <path>
               <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
+              <item name="filterFunctions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
               <item name="pixelValue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Geosoft2DiscoveryService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Geosoft2DiscoveryService" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,6 +244,11 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -201,22 +276,22 @@
       <option name="presentableId" value="Default" />
       <updated>1515434459296</updated>
       <workItem from="1515434460744" duration="13623000" />
-      <workItem from="1515456525526" duration="7915000" />
+      <workItem from="1515456525526" duration="8055000" />
+      <workItem from="1515924508734" duration="4342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21538000" />
+    <option name="totallyTimeSpent" value="26020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10371179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1643013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -229,6 +304,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -247,7 +323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -257,33 +332,52 @@
           <first_editor relative-caret-position="108">
             <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
             <folding>
-              <marker date="1515434418791" expanded="true" signature="7820:14160" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="7826:14158" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="8042:11997" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="8198:8246" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="8268:8324" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="8358:8399" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="8425:11274" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="8447:10497" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="10530:11260" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="11309:11809" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="11340:11404" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11435:11501" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11533:11601" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11633:11699" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11727:11795" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11838:11962" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="11906:11948" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="12025:12301" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="12322:14152" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="14810:15134" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="14826:15132" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="14892:15127" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="14905:14969" ph="{&quot;band&quot;: &quot;1&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="14980:15044" ph="{&quot;band&quot;: &quot;2&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="15055:15119" ph="{&quot;band&quot;: &quot;3&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="15465:15609" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="15481:15607" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3099:9439" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="3105:9437" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3321:7276" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3477:3525" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="3547:3603" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="3637:3678" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3704:6553" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="3726:5776" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="5809:6539" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="6588:7088" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="6619:6683" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="6714:6780" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="6812:6880" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="6912:6978" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7006:7074" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7117:7241" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="7185:7227" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7304:7580" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7601:9431" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="11579:17919" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="11585:17917" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="11801:15756" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="11957:12005" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="12027:12083" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="12117:12158" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="12184:15033" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="12206:14256" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="14289:15019" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="15068:15568" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="15099:15163" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15194:15260" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15292:15360" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15392:15458" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15486:15554" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15597:15721" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="15665:15707" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15784:16060" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="16081:17911" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18569:18893" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="18585:18891" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18651:18886" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="18664:18728" ph="{&quot;band&quot;: &quot;1&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18739:18803" ph="{&quot;band&quot;: &quot;2&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18814:18878" ph="{&quot;band&quot;: &quot;3&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="19224:19368" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="19240:19366" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -294,7 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -302,7 +395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -310,9 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -320,17 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2483">
-          <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -346,94 +424,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-954">
           <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/maxDateFilter_Spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/minDateFilter_Spec.js" />
-    <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/polygonintersection_Spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmsAccess/TMS.js" />
     <entry file="file://$PROJECT_DIR$/test/test.js" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-            <folding>
-              <marker date="1515434418791" expanded="true" signature="7820:14160" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="7826:14158" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="8042:11997" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="8198:8246" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="8268:8324" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="8358:8399" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="8425:11274" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="8447:10497" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="10530:11260" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="11309:11809" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="11340:11404" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11435:11501" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11533:11601" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11633:11699" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11727:11795" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="11838:11962" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="11906:11948" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="12025:12301" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="12322:14152" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="14810:15134" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="14826:15132" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="14892:15127" ph="[...]" />
-              <marker date="1515434418791" expanded="true" signature="14905:14969" ph="{&quot;band&quot;: &quot;1&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="14980:15044" ph="{&quot;band&quot;: &quot;2&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="15055:15119" ph="{&quot;band&quot;: &quot;3&quot;...}" />
-              <marker date="1515434418791" expanded="true" signature="15465:15609" ph="{...}" />
-              <marker date="1515434418791" expanded="true" signature="15481:15607" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -446,6 +442,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="176" column="58" lean-forward="false" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/fileNameFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/maxDateFilter_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/polygonintersection_Spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="68" column="65" lean-forward="true" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
+            <folding>
+              <marker date="1515927912404" expanded="true" signature="3099:9439" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="3105:9437" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3321:7276" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3477:3525" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="3547:3603" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="3637:3678" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="3704:6553" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="3726:5776" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="5809:6539" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="6588:7088" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="6619:6683" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="6714:6780" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="6812:6880" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="6912:6978" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7006:7074" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7117:7241" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="7185:7227" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7304:7580" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="7601:9431" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="11579:17919" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="11585:17917" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="11801:15756" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="11957:12005" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="12027:12083" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="12117:12158" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="12184:15033" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="12206:14256" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="14289:15019" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="15068:15568" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="15099:15163" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15194:15260" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15292:15360" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15392:15458" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15486:15554" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15597:15721" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="15665:15707" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="15784:16060" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="16081:17911" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18569:18893" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="18585:18891" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18651:18886" ph="[...]" />
+              <marker date="1515927912404" expanded="true" signature="18664:18728" ph="{&quot;band&quot;: &quot;1&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18739:18803" ph="{&quot;band&quot;: &quot;2&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="18814:18878" ph="{&quot;band&quot;: &quot;3&quot;...}" />
+              <marker date="1515927912404" expanded="true" signature="19224:19368" ph="{...}" />
+              <marker date="1515927912404" expanded="true" signature="19240:19366" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filterFunctions/polygonIntersectionFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="35" />
           <folding />
         </state>
       </provider>
