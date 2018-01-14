@@ -39,8 +39,7 @@ Es werden die Zoomstufen 0-14 unterstützt.
  * band: B01, B02, B03, ... B12, BBA
  * Z/X/Y gemäß TMS Spezifikation 
 
-**Antwort** 
-256x256 tile in .png format
+**Antwort:**  256x256 tile in .png format
 
 **Beispiel**
 [http://gis-bigdata:11016/img/S2A_MSIL1C_20161212T082332_N0204_R121_T34KGD_20161212T084403.SAFE/IMG_DATA/B01/10/577/456.png](http://gis-bigdata:11016/img/S2A_MSIL1C_20161212T082332_N0204_R121_T34KGD_20161212T084403.SAFE/IMG_DATA/B01/10/577/456.png)
@@ -58,10 +57,10 @@ Es werden die Zoomstufen 0-14 unterstützt.
    * R60m: B01, ..., B07, B09, B11, B12, BBA, AOT, SCL, TCI, WVP
  * Z/X/Y gemäß TMS Spezifikation
 
-**Antwort** 
-256x256 tile in .png format
+**Antwort:** 256x256 tile in .png format
 
-**Beispiel**
+**Beispiel:**
+
 [http://gis-bigdata:11016/img/S2A_MSIL2A_20170805T102031_N0205_R065_T32TMR_20170805T102535.SAFE/IMG_DATA/R10m/B02/6/33/41.png](http://gis-bigdata:11016/img/S2A_MSIL2A_20170805T102031_N0205_R065_T32TMR_20170805T102535.SAFE/IMG_DATA/R10m/B02/6/33/41.png)
 
 ![MSIL2AExampleTile](./MSIL2AExampleTile.png)
@@ -69,7 +68,7 @@ Es werden die Zoomstufen 0-14 unterstützt.
 ## Metadate filtering
 
 ### API
-GET: /datasets
+**Get:** /datasets
 
 **Akzeptierte Abfrageparameter:**
  * identifiers: Leerzeichen separierte Liste von Suchbegriffen in Scenenbeschreibungen. Werden mit logischen UND verknüpft
@@ -81,8 +80,11 @@ GET: /datasets
 Array von Scene-Objekten welche die Filterbedingungen erfüllen. Werden keine Filterbedingungen angegeben, werde die Metadaten aller verfügbaren Aufnahmen zurückgegeben. Die Parameter sind UND-Verknüpft.
 
 **Beispiele**
+
 ***Suchen nach einer Aufname per identifier***
+
 [http://gis-bigdata:11016/datasets?identifiers=20171010T104021](http://gis-bigdata:11016/datasets?identifiers=20171010T104021)
+
 [http://gis-bigdata:11016/datasets?identifiers=2017 1010T 104 021](http://gis-bigdata:11016/datasets?identifiers=20171010T104021)
 
 
@@ -213,8 +215,11 @@ Array von Scene-Objekten welche die Filterbedingungen erfüllen. Werden keine Fi
     }
 ]
 ```
+
 **Beispiele**
+
 ***Suchen per Datumsfilter und bbox***
+
 [http://gis-bigdata:11016/datasets?identifiers=2017&bbox=-5.231,14.9295,-5.231,2014.9295](http://gis-bigdata:11016/datasets?identifiers=2017&bbox=-5.231,14.9295,-5.231,2014.9295)
 
 ```json
@@ -377,22 +382,24 @@ Eine Problembeschreibung ist auf stackoverflow zu finden:
 ![https://stackoverflow.com/questions/48165525/node-cmd-command-error-command-failed](https://stackoverflow.com/questions/48165525/node-cmd-command-error-command-failed
 )
 ### API
-GET: /pixelValue
+**Get:** /pixelValue
 
-**Accepted query parameters:**
+**Anfrageparameter:**
  * identifier: scene name 
- * band
+ * band: Band, das angefragt wird
  * lat
  * long
 
-**Response:**
-Object, containing the pixel values
+**Antwort:**
 
-#### Examples 
-##### Pixelwerte Anfragen
+Objekt mit den Pixelwerten:
+
+**Beispiel:**
+
+***Pixelwerte Anfragen:***
+
 [http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=15&long=-5](http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=15&long=-5)
 
-###### Response
 
 ```json
 {  
@@ -417,10 +424,11 @@ Object, containing the pixel values
 }
 ```
 
-##### Invalid Request
+***Pixelwerte Anfragen, außerhalb einer Aufnahme:***
+
 [http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=-5&long=-5](http://gis-bigdata:11016/pixelValue?identifier=S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&band=TCI&lat=-5&long=-5)
 
-###### Response
+
 
 ```json
 {  
@@ -435,7 +443,7 @@ Object, containing the pixel values
 
 
 
-### Tile Map Service (TMS) and metadata foundation
+### Tile Map Service (TMS) erzeugt mit Bash
 
 Dieser Abschnitt beschreibt die Erzeugung der Tiles aus den Aufnahmen.
 Hierzu wurden Bash-Scripte geschrieben, welche die Ordnersturktur der Aufnahmen für einen einfacheren Zugriff dem 
