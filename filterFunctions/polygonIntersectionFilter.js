@@ -49,10 +49,12 @@ function polygoneIntersectionFilter(promObj) {
                         resolve(promObj);
                         break;
                     } else {
+                        console.log("promObj.filterResult.length"); console.log(promObj.filterResult.length);
+                        console.log("i"); console.log(i)
                         let sentinelFootprintPolygone = getSexySentinelPOLYGON(promObj.filterResult[i].MTD.metadata[""].FOOTPRINT)
 
                         if (queryPolygoneIntersectOrIsContained(queryPolygone, sentinelFootprintPolygone) || queryPolygoneIntersectOrIsContained(sentinelFootprintPolygone, queryPolygone)) {
-                            console.log("PushingPolygoneToFilterResult");   
+                            console.log("PushingPolygoneToFilterResult");
                             tempFilterResult.push(promObj.filterResult[i]);
                         }
                     }
