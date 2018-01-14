@@ -124,6 +124,8 @@ function getSexyQueryBbox(bboxString) {
         ]
     ];
 
+    console.log("sexyPolygonBbox"); console.log(polygoneArray)
+
     return polygoneArray;
 };
 
