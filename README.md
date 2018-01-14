@@ -24,7 +24,7 @@ Zum Starten des Servers wahlweise *npm start* oder *node index.js* ausführen.
 ## Lizensierung
 
 | Package          | Lizens               |
-| ---------------- | -------------------- |
+| --- | --- |
 | body-parser      | MIT                  |
 | compression      | MIT                  |
 | cors             | MIT                  |
@@ -38,7 +38,6 @@ Zum Starten des Servers wahlweise *npm start* oder *node index.js* ausführen.
 | path             | MIT                  |
 | point-in-polygon | MIT                  |
 | xml2json         | MIT                  |
-
 
 
 
