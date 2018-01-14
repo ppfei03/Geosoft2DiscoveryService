@@ -19,11 +19,13 @@ var inside = require('point-in-polygon');
 // of Granule
 // footprint wrt the expected
 // geometry
+// Geolocation of the four corners of the Granule
+// envelope (Lat, Lon, H coordinates with horizontal CRS as WGS84 and altitude given over EGM96).
 //
-// Note:  the  polygon  is  def ined  as
+// Note:  the  polygon  is  defined  as
 // five points given counter -
 // clockwise oriented
-// w ith the f irst
+// with the first
 // and  last  vertices identical
 //
 // https://sentinel.esa.int/documents/247904/349490/S2_MSI_Product_Specification.pdf
@@ -106,20 +108,20 @@ function getSexyQueryBbox(bboxString) {
     }
     let polygoneArray = [
         [
-            parseFloat(bboxArray[0]),// minx
-            parseFloat(bboxArray[1]) // miny
+            parseFloat(bboxArray[1]),// miny
+            parseFloat(bboxArray[0]) // minx
         ],
         [
-            parseFloat(bboxArray[2]), //maxx
-            parseFloat(bboxArray[1]) //miny
+            parseFloat(bboxArray[1]), //miny
+            parseFloat(bboxArray[2]) //maxx
         ],
         [
-            parseFloat(bboxArray[2]), //maxx
-            parseFloat(bboxArray[3]) //maxy
+            parseFloat(bboxArray[3]), //maxy
+            parseFloat(bboxArray[2]) //maxx
         ],
         [
-            parseFloat(bboxArray[0]), //minx
-            parseFloat(bboxArray[3]) //maxy
+            parseFloat(bboxArray[3]), //maxy
+            parseFloat(bboxArray[0]) //minx
         ]
     ];
 
