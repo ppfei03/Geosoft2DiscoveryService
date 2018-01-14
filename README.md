@@ -22,6 +22,7 @@ Nach dem Download des Projekts, im root-Verzeichnis (dort wo die package.json li
 Zum Starten des Servers wahlweise *npm start* oder *node index.js* ausführen.
 
 ## Lizensierung
+
 | Package          | Lizens               |
 | ---------------- | -------------------- |
 | body-parser      | MIT                  |
@@ -37,6 +38,9 @@ Zum Starten des Servers wahlweise *npm start* oder *node index.js* ausführen.
 | path             | MIT                  |
 | point-in-polygon | MIT                  |
 | xml2json         | MIT                  |
+
+
+
 
 ## Tests ausführen mit
 npm test

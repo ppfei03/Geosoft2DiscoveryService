@@ -40,58 +40,58 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="550">
-                <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+              <first_editor relative-caret-position="352">
+                <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                 <folding>
-                  <marker date="1515941805363" expanded="true" signature="4276:10616" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="4282:10614" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="4498:8453" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="4654:4702" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="4724:4780" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="4814:4855" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="4881:7730" ph="{...}" />
-                  <marker date="1515941805363" expanded="true" signature="4903:6953" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="6986:7716" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="7765:8265" ph="{...}" />
-                  <marker date="1515941805363" expanded="true" signature="7796:7860" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="7891:7957" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="7989:8057" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="8089:8155" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="8183:8251" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="8294:8418" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="8362:8404" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="8481:8757" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="8778:10608" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="10865:16556" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="10869:16554" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="10870:16554" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="11092:14644" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="11232:11273" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="11291:11336" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="11366:11399" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="11421:14027" ph="{...}" />
-                  <marker date="1515941805363" expanded="true" signature="11438:13310" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="13338:14016" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="14058:14460" ph="{...}" />
-                  <marker date="1515941805363" expanded="true" signature="14084:14134" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14160:14212" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14239:14293" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14320:14372" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14395:14449" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14485:14604" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="14543:14593" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14560:14579" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14623:14636" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14669:14885" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="14903:16549" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="19017:19341" ph="{...}" />
-                  <marker date="1515941805363" expanded="true" signature="19033:19339" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="19099:19334" ph="[...]" />
-                  <marker date="1515941805363" expanded="true" signature="19112:19176" ph="{&quot;band&quot;: &quot;1&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="19187:19251" ph="{&quot;band&quot;: &quot;2&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="19262:19326" ph="{&quot;band&quot;: &quot;3&quot;...}" />
-                  <marker date="1515941805363" expanded="true" signature="19689:19833" ph="{...}" />
-                  <marker date="1515941805363" expanded="true" signature="19705:19831" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="4280:10620" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="4286:10618" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="4502:8457" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="4658:4706" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="4728:4784" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="4818:4859" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="4885:7734" ph="{...}" />
+                  <marker date="1515941985936" expanded="true" signature="4907:6957" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="6990:7720" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="7769:8269" ph="{...}" />
+                  <marker date="1515941985936" expanded="true" signature="7800:7864" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="7895:7961" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="7993:8061" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="8093:8159" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="8187:8255" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="8298:8422" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="8366:8408" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="8485:8761" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="8782:10612" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="10869:16560" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="10873:16558" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="10874:16558" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="11096:14648" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="11236:11277" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="11295:11340" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="11370:11403" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="11425:14031" ph="{...}" />
+                  <marker date="1515941985936" expanded="true" signature="11442:13314" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="13342:14020" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="14062:14464" ph="{...}" />
+                  <marker date="1515941985936" expanded="true" signature="14088:14138" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14164:14216" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14243:14297" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14324:14376" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14399:14453" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14489:14608" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="14547:14597" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14564:14583" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14627:14640" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14673:14889" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="14907:16553" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="19021:19345" ph="{...}" />
+                  <marker date="1515941985936" expanded="true" signature="19037:19343" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="19103:19338" ph="[...]" />
+                  <marker date="1515941985936" expanded="true" signature="19116:19180" ph="{&quot;band&quot;: &quot;1&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="19191:19255" ph="{&quot;band&quot;: &quot;2&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="19266:19330" ph="{&quot;band&quot;: &quot;3&quot;...}" />
+                  <marker date="1515941985936" expanded="true" signature="19693:19837" ph="{...}" />
+                  <marker date="1515941985936" expanded="true" signature="19709:19835" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -268,12 +268,12 @@
       <updated>1515434459296</updated>
       <workItem from="1515434460744" duration="13623000" />
       <workItem from="1515456525526" duration="8055000" />
-      <workItem from="1515924508734" duration="17039000" />
+      <workItem from="1515924508734" duration="17217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38717000" />
+    <option name="totallyTimeSpent" value="38895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -324,55 +324,55 @@
           <first_editor relative-caret-position="108">
             <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
             <folding>
-              <marker date="1515941805363" expanded="true" signature="4276:10616" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="4282:10614" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="4498:8453" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="4654:4702" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="4724:4780" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="4814:4855" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="4881:7730" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="4903:6953" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="6986:7716" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="7765:8265" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="7796:7860" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="7891:7957" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="7989:8057" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8089:8155" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8183:8251" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8294:8418" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="8362:8404" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8481:8757" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8778:10608" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="10865:16556" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="10869:16554" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="10870:16554" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="11092:14644" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="11232:11273" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="11291:11336" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="11366:11399" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="11421:14027" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="11438:13310" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="13338:14016" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="14058:14460" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="14084:14134" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14160:14212" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14239:14293" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14320:14372" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14395:14449" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14485:14604" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="14543:14593" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14560:14579" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14623:14636" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14669:14885" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14903:16549" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19017:19341" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="19033:19339" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19099:19334" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="19112:19176" ph="{&quot;band&quot;: &quot;1&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19187:19251" ph="{&quot;band&quot;: &quot;2&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19262:19326" ph="{&quot;band&quot;: &quot;3&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19689:19833" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="19705:19831" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4280:10620" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="4286:10618" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4502:8457" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4658:4706" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="4728:4784" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="4818:4859" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4885:7734" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="4907:6957" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="6990:7720" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="7769:8269" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="7800:7864" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="7895:7961" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="7993:8061" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8093:8159" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8187:8255" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8298:8422" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="8366:8408" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8485:8761" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8782:10612" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="10869:16560" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="10873:16558" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="10874:16558" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="11096:14648" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="11236:11277" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="11295:11340" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="11370:11403" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="11425:14031" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="11442:13314" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="13342:14020" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="14062:14464" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="14088:14138" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14164:14216" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14243:14297" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14324:14376" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14399:14453" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14489:14608" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="14547:14597" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14564:14583" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14627:14640" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14673:14889" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14907:16553" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19021:19345" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="19037:19343" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19103:19338" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="19116:19180" ph="{&quot;band&quot;: &quot;1&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19191:19255" ph="{&quot;band&quot;: &quot;2&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19266:19330" ph="{&quot;band&quot;: &quot;3&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19693:19837" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="19709:19835" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -494,58 +494,58 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="550">
-            <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <first_editor relative-caret-position="352">
+            <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
             <folding>
-              <marker date="1515941805363" expanded="true" signature="4276:10616" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="4282:10614" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="4498:8453" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="4654:4702" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="4724:4780" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="4814:4855" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="4881:7730" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="4903:6953" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="6986:7716" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="7765:8265" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="7796:7860" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="7891:7957" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="7989:8057" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8089:8155" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8183:8251" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8294:8418" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="8362:8404" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8481:8757" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="8778:10608" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="10865:16556" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="10869:16554" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="10870:16554" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="11092:14644" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="11232:11273" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="11291:11336" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="11366:11399" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="11421:14027" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="11438:13310" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="13338:14016" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="14058:14460" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="14084:14134" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14160:14212" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14239:14293" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14320:14372" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14395:14449" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14485:14604" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="14543:14593" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14560:14579" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14623:14636" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14669:14885" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="14903:16549" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19017:19341" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="19033:19339" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19099:19334" ph="[...]" />
-              <marker date="1515941805363" expanded="true" signature="19112:19176" ph="{&quot;band&quot;: &quot;1&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19187:19251" ph="{&quot;band&quot;: &quot;2&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19262:19326" ph="{&quot;band&quot;: &quot;3&quot;...}" />
-              <marker date="1515941805363" expanded="true" signature="19689:19833" ph="{...}" />
-              <marker date="1515941805363" expanded="true" signature="19705:19831" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4280:10620" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="4286:10618" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4502:8457" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4658:4706" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="4728:4784" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="4818:4859" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="4885:7734" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="4907:6957" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="6990:7720" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="7769:8269" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="7800:7864" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="7895:7961" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="7993:8061" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8093:8159" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8187:8255" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8298:8422" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="8366:8408" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8485:8761" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="8782:10612" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="10869:16560" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="10873:16558" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="10874:16558" ph="{&quot;sceneName&quot;: &quot;S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="11096:14648" ph="{&quot;description&quot;: &quot;MTD_MSIL1C.xml&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="11236:11277" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="11295:11340" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="11370:11403" ph="{&quot;wkt&quot;: &quot;&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="11425:14031" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="11442:13314" ph="{&quot;CLOUD_COVERAGE_ASSESSMENT&quot;: &quot;4.9866&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="13342:14020" ph="{&quot;SUBDATASET_1_NAME&quot;: &quot;SENTINEL2_L1C:MTD_MSIL1C.xml:10m:EPSG_32630&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="14062:14464" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="14088:14138" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14164:14216" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14243:14297" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14324:14376" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14399:14453" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14489:14608" ph="{&quot;type&quot;: &quot;Polygon&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="14547:14597" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14564:14583" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14627:14640" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14673:14889" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="14907:16553" ph="{&quot;B01&quot;: &quot;http://gis-bigdata:11016/img/S2A_MSIL1C_20171010T104021_N0205_R008_T30PTB_20171010T104947.SAFE/IMG_DATA/B01&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19021:19345" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="19037:19343" ph="{&quot;pixel&quot;: &quot;8496&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19103:19338" ph="[...]" />
+              <marker date="1515941985936" expanded="true" signature="19116:19180" ph="{&quot;band&quot;: &quot;1&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19191:19255" ph="{&quot;band&quot;: &quot;2&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19266:19330" ph="{&quot;band&quot;: &quot;3&quot;...}" />
+              <marker date="1515941985936" expanded="true" signature="19693:19837" ph="{...}" />
+              <marker date="1515941985936" expanded="true" signature="19709:19835" ph="{&quot;pixel&quot;: &quot;7826&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
