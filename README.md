@@ -22,6 +22,21 @@ Nach dem Download des Projekts, im root-Verzeichnis (dort wo die package.json li
 Zum Starten des Servers wahlweise *npm start* oder *node index.js* ausführen.
 
 ## Lizensierung
+| Package          | Lizens               |
+| ---------------- | -------------------- |
+| body-parser      | MIT                  |
+| compression      | MIT                  |
+| cors             | MIT                  |
+| express          | MIT                  |
+| fs-extra         | MIT                  |
+| fs-readdir       | MIT                  |
+| jasmine          | MIT                  |
+| node-cmd         | DBAD Public Licence. |
+| node-dir         | MIT                  |
+| nodemon          | MIT                  |
+| path             | MIT                  |
+| point-in-polygon | MIT                  |
+| xml2json         | MIT                  |
 
 ## Tests ausführen mit
 npm test
@@ -378,9 +393,15 @@ Zur gleichen Zeit hatte die Processing-Gruppe ebenfalls Probleme mit Funktionen,
 Deren Proplem waren nach einigen Stunden, ohne Änderungen am Code, verschwunden.
 Die Problematik mit der Abfrage der Werte bleibt.
 
-Eine Problembeschreibung ist auf stackoverflow zu finden:
-![https://stackoverflow.com/questions/48165525/node-cmd-command-error-command-failed](https://stackoverflow.com/questions/48165525/node-cmd-command-error-command-failed
+Eine Problembeschreibung ist auf den folgenden Seiten zu finden:
+
+[https://stackoverflow.com/questions/48165525/node-cmd-command-error-command-failed](https://stackoverflow.com/questions/48165525/node-cmd-command-error-command-failed
 )
+
+[https://github.com/RIAEvangelist/node-cmd/issues/29](https://github.com/RIAEvangelist/node-cmd/issues/29)
+
+Ein Workaround mit anderen Modulen oder nativen nodejs-Funktionen wurde nicht gefunden. Viele führten zur gleichen Fehlermledung.
+
 ### API
 **Get:** /pixelValue
 
