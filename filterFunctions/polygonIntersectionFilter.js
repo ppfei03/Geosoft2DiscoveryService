@@ -106,20 +106,20 @@ function getSexyQueryBbox(bboxString) {
     }
     let polygoneArray = [
         [
-            parseFloat(bboxArray[1]),// miny
-            parseFloat(bboxArray[0]) // minx
+            parseFloat(bboxArray[0]),// miny
+            parseFloat(bboxArray[1]) // minx
         ],
         [
-            parseFloat(bboxArray[1]), //miny
-            parseFloat(bboxArray[2]) //maxx
+            parseFloat(bboxArray[2]), //miny
+            parseFloat(bboxArray[1]) //maxx
         ],
         [
-            parseFloat(bboxArray[3]), //maxy
-            parseFloat(bboxArray[2]) //maxx
+            parseFloat(bboxArray[2]), //maxy
+            parseFloat(bboxArray[3]) //maxx
         ],
         [
-            parseFloat(bboxArray[3]), //maxy
-            parseFloat(bboxArray[0]) //minx
+            parseFloat(bboxArray[0]), //maxy
+            parseFloat(bboxArray[3]) //minx
         ]
     ];
 
