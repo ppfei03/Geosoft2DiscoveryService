@@ -21,7 +21,7 @@ describe('queryPolygoneIntersectOrIsContained', () => {
             [ '180', '90' ],
             [ '-180', '90' ] ]
         ;
-        var point = [[ -91.04181910203256,23.498246176850945 ]];
+        var point = [[ '-91.04181910203256' , '23.498246176850945' ]];
         let res = queryPolygoneIntersectOrIsContained(point, polygon)
         console.log(res);
         expect(res).toEqual(true);

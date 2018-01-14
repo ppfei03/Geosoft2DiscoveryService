@@ -107,20 +107,20 @@ function getSexyQueryBbox(bboxString) {
     }
     let polygoneArray = [
         [[
-            bboxArray[0], // minx
-            bboxArray[1] // miny
+            parseFloat(bboxArray[0]),// minx
+            parseFloat(bboxArray[1]) // miny
         ]],
         [[
-            bboxArray[2], //maxx
-            bboxArray[1] //miny
+            parseFloat(bboxArray[2]), //maxx
+            parseFloat(bboxArray[1]) //miny
         ]],
         [[
-            bboxArray[2], //maxx
-            bboxArray[3] //maxy
+            parseFloat(bboxArray[2]), //maxx
+            parseFloat(bboxArray[3]) //maxy
         ]],
         [[
-            bboxArray[0], //minx
-            bboxArray[3] //maxy
+            parseFloat(bboxArray[0]), //minx
+            parseFloat(bboxArray[3]) //maxy
         ]]
     ];
 
@@ -150,7 +150,7 @@ function getSexySentinelPOLYGON(FootprintString) {
         let coordinate = [];
         crazySplitWithEmptyArray.forEach(element => {
             if (isNumeric(element)) {
-                coordinate.push(element)
+                coordinate.push(parseFloat(element));
             }
         });
         xyPairs[i] = coordinate;
